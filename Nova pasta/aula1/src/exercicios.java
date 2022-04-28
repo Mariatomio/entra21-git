@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class exercicios {
     public static void main(String[] args) {
-        exe05();
+        exe08();
     }
     //exercise 1
     public static void exe01() {
@@ -73,11 +73,61 @@ public class exercicios {
         System.out.println();
         System.out.print("A porcentagem de votos válidos é de " );
 double var3 = ((pessoa - (branco + nulo)) * 100.0) / pessoa;
-        System.out.printf(var3 2.f + "%");
+        System.out.println();
     }
 
     public static void exe06() {
+        Scanner ler = new Scanner(System.in);
+
+        double salario, reajuste, novoSalario;
+
+        System.out.printf("Informe o salario mensal:\n");
+        salario = ler.nextDouble();
+
+        System.out.printf("\nInforme o percentual de reajuste:\n");
+        reajuste = ler.nextDouble();
+
+        novoSalario = salario + ((salario * reajuste) / 100) ;
+        System.out.printf("\nSalario novo = R$ " + novoSalario);
+    }
+
+    public static void exe07() {
         Scanner in = new Scanner(System.in);
+        System.out.println("Qual é o o preço do carro em fábrica?");
+       double preco = in.nextInt();
+double carro = preco + ( 0.28 * preco) + ( 0.45 * preco);
+        System.out.println("o preço final do carro é R$ " + carro);
+    }
+
+    public static void exe08() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Quantos carros você vendeu?");
+        int vendido = in.nextInt();
+
+        System.out.println("Qual o valor que você recebe por carro vendido");
+        double recebe = in.nextDouble();
+
+        System.out.println("Quanto você recebe de comissão por cada carro vendido?");
+        double carro = in.nextDouble();
+
+        System.out.println("Qual foi o valor total de suas vendas?");
+        double valores = in.nextDouble();
+
+        System.out.println("Qual o seu salário fixo?");
+        double salario = in.nextDouble();
+
+        double salariofinal;
+
+        salariofinal = salario + (carro * vendido) + (0.05 * valores);
+        System.out.println("Seu salário final = R$ " + salariofinal);
+
+
+
+
+
+
+
 
     }
     }
