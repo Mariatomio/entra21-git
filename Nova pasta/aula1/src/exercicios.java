@@ -1,10 +1,13 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.Scanner;
 import java.util.function.DoubleBinaryOperator;
 
 
 public class exercicios {
     public static void main(String[] args) {
-        exe12();
+
+        exe20();
     }
 
     //exercise 1
@@ -125,7 +128,7 @@ public class exercicios {
         double salariofinal;
 
         salariofinal = salario + (carro * recebe) + (0.05 * valores);
-        System.out.println("Seu salário final = R$ " + salariofinal);
+        System.out.printf("Seu salário final = R$%.2f ", salariofinal);
 
     }
 
@@ -238,4 +241,86 @@ public class exercicios {
 
         }
     }
+
+    public static void exe17() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Digite o horário, inteiro, inicial do jogo de xadrex");
+        int ini = in.nextInt();
+
+        System.out.println("Digite o horário, inteiro, final do jogo d xadrex");
+        int fin = in.nextInt();
+
+        int tempojogo = fin - ini + 24;
+        if (fin < ini){
+            System.out.println("A duração do jogo foi de " + tempojogo + " horas, O jogo acabou no outro dia");
+        } else {
+            System.out.println("A duração do jogo foi de " + (fin - ini) + " hora(s), O jogo acabou no mesmo dia");
+        }
+        //duranção do jogo = fin - ini
+    }
+
+    public static void exe18() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Quantas horas você trabalhou esse mês?");
+        double hr = in.nextDouble();
+
+        System.out.println("Quanto você recebe por hora?");
+        double valor = in.nextDouble();
+
+        //calculo do salário normal
+        double recebemes;
+        recebemes = (valor * 160);
+
+        // salário sem hora extra
+        if (hr <= 160) {
+            System.out.println("Seu salário final será R$ " + recebemes);
+        }
+        //salário com hora extra
+        double salarioextra = hr - 160;
+        double salariofinalextra = (recebemes + (salarioextra * 0.50));
+
+        if (hr > 160) {
+            System.out.println("Seu salário final será R$ " + salariofinalextra);
+        }
+    }
+
+    public static void exe19() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Digite seu nome");
+        String nome = in.nextLine();
+
+        System.out.println("Digite a sua altura");
+        double altura = in.nextDouble();
+
+        System.out.println("Digite seu gênero: Feminino ou Masculino");
+        in.nextLine();
+        String g = in.nextLine();
+
+        if (g == "feminino"){
+            System.out.println(nome + "seu peso ideal é " + ((62.1 * altura) - 44.7));
 }
+if (g == "masculino"){
+            System.out.println(nome + "seu peso ideal é " + ((72.7 * altura) - 58));
+        }
+    }
+
+    public static void exe20() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Digite seu salário fixo");
+        double salario = in.nextDouble();
+
+        System.out.println("Digite o valor das suas vendas efetuadas");
+        double vendas = in.nextDouble();
+
+        //salário abaixo de 1500
+        double
+        salarionormal = salario + (vendas * 0.03);
+        if (vendas <= 1500){
+            System.out.println("Seu salário final: " + salarionormal);
+        }
+        double salarioextra = vendas + salarionormal + ((salario - 1500) * 0.05);
+        if (vendas > 1500)
+            System.out.println("Seu salário final: " + salarioextra);
+        }
+    }
+
