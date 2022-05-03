@@ -6,11 +6,9 @@ import java.util.function.DoubleBinaryOperator;
 
 public class exercicios {
     public static void main(String[] args) {
-        exe14();
+
         exe19();
-        exe20();
-        exe21();
-        exe22();
+
     }
 
     //exercise 1
@@ -301,14 +299,14 @@ public class exercicios {
         System.out.println("Digite seu nome");
         String nome = in.nextLine();
 
-        System.out.println("Digite a sua altura (use vírgula ao invés de ponto");
+        System.out.println("Digite a sua altura (use vírgula ao invés de ponto)");
         double altura = in.nextDouble();
 
         System.out.println("Digite seu gênero: feminino ou masculino");
         in.nextLine();
         String g = in.nextLine();
         if (g.equals("feminino")) {
-            System.out.println(nome + "seu peso ideal é " + ((62.1 * altura) - 44.7));
+            System.out.println(nome + " seu peso ideal é " + ((62.1 * altura) - 44.7));
         } else {
             System.out.println(nome + "seu peso ideal é " + ((72.7 * altura) - 58));
         }
