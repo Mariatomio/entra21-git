@@ -7,7 +7,7 @@ import java.util.function.DoubleBinaryOperator;
 public class exercicios {
     public static void main(String[] args) {
 
-        exe19();
+        exe18();
 
     }
 
@@ -278,19 +278,20 @@ public class exercicios {
 
         //calculo do salário normal
         double recebemes;
-        recebemes = (valor * 160);
+
 
         // salário sem hora extra
         if (hr <= 160) {
+            recebemes = (valor * 160);
             System.out.println("Seu salário final será R$ " + recebemes);
-        }
+        }else{
         //salário com hora extra
+            recebemes = (valor * 160);
         double salarioextra = hr - 160;
-        double salariofinalextra = (recebemes + (salarioextra * 0.50));
-
-        if (hr > 160) {
-            System.out.println("Seu salário final será R$ " + salariofinalextra);
+        double salariofinalextra = (recebemes + (salarioextra * (valor+valor*0.50)));
+        System.out.println("Seu salário final será R$ " + salariofinalextra);
         }
+        //1460 reais de 175 hrs e 8 hrs
     }
 
     public static void exe19() {
