@@ -12,7 +12,7 @@ public class Teste {
             System.out.println("Informe  abreviação da Classe Healer: ");
             String clazz = in.nextLine().toUpperCase(Locale.ROOT);
             if (clazz.length() != 3) {
-                System.out.println("Não é uma abreviação válida");
+                System.err.println("Não é uma abreviação válida");
 continue; // continuar pedindo as abreviaçãp
             }
             switch (clazz) {
@@ -26,7 +26,7 @@ continue; // continuar pedindo as abreviaçãp
                     System.out.println("DPS");
                     break;
                 default:
-                    System.out.println("Não é Healer");
+                    System.err.println("Não é Healer");
                    // isHealer = false; SE COLOCAR ISSO NN PERGUNTA DNV
                     continue;
 
