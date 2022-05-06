@@ -27,8 +27,9 @@ continue; // continuar pedindo as abreviaçãp
                     break;
                 default:
                     System.out.println("Não é Healer");
-                    isHealer = false;
-                    break;
+                   // isHealer = false; SE COLOCAR ISSO NN PERGUNTA DNV
+                    continue;
+
             }
 
             }
