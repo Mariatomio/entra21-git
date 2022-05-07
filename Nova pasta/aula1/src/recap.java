@@ -1,8 +1,14 @@
 import java.awt.font.FontRenderContext;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class recap {
     public static void main(String[] args) {
+      exe6();
+
+    }
+
+    public static void exe1() {
 
 // saida de mensagem para usuários
         int var1;
@@ -108,9 +114,9 @@ public class recap {
 
         //String - LISTA de char
         String var3 = "djsdhkhs";
-       // var1.charAT(); // retornar só uma letra da posição informada
+        // var1.charAT(); // retornar só uma letra da posição informada
 
-       // System.out.println(var3.lenght()); // lenght() retorna a quantidade total
+        // System.out.println(var3.lenght()); // lenght() retorna a quantidade total
         // de caracteres no texto
 
         System.out.println(var3.charAt(0)); // chatAT() retirna o caracter na posição x
@@ -136,6 +142,170 @@ public class recap {
 
         //concat
 
+        //Array
+        int[] numeros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; // iniciando lista com valores
+        int[] numeros2 = new int[10]; // iniciando lista vazia
+
+        System.out.println(numeros[6]); // recuperando um valor da lista
+        numeros2[4] = 7; // ou in.nextInt() //inserindo um valor no array
+        System.out.println(numeros.length); //pegando a quantidade de itens
+        //System.out.println(numeros); //nn vai ler direito, vai aparecer a lista de memória no pc
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println(numeros[i]);
+        }
+
+        //matriz
+        int[][] numeros3 = {{0, 1, 2, 3, 4,}, {5, 6, 7, 8, 9}}; // cada uma das chaves de dentro é uma linha e cada nº uma coluna ex:2 linhas e 5 colunas
+        int[][] numeros4 = new int[2][5]; //duas linhas e 5 colunas igual a de cima
+        System.out.println(numeros3[0][2]); // recuperando um valor de uma matriz
+        numeros4[1] = new int[]{7, 8, 9, 0}; // inserindo uma lista em uma linha
+        numeros4[0][0] = 9; // inserindo dados em uma posção de matriz
+
+        System.out.println(numeros3.length); // numero de linhas da matriz
+        System.out.println(numeros3[0].length); // quantidade de itens na linha da matriz
+
+        for (int i = 0; i < numeros3.length; i++) {
+            for (int j = 0; j < numeros3[i].length; j++) {
+                System.out.println(numeros3[i][j]);
+                ;
+            }
+        }
+    }
+
+//batalha naval
+    public static void batalhanaval() {
+        Scanner in = new Scanner(System.in);
+        boolean lc = true;
+        int coluna1 = 0;
+        boolean x = true;
+        while (x) {
+            System.out.println("Informe uma linha de 0 até 7, caso você digite 9, o código para ");
+            int linha = in.nextInt();
+            if (linha == 9) {
+                break;
+            }
+
+            while (lc) {
+                System.out.println("Informe uma coluna de A até H");
+                String coluna = in.next().toUpperCase();
+                switch (coluna) {
+                    case "A":
+                        coluna1 = 0;
+                        lc = false;
+                        break;
+                    case "B":
+                        coluna1 = 1;
+                        lc = false;
+                        break;
+                    case "C":
+                        coluna1 = 2;
+                        lc = false;
+                        break;
+                    case "D":
+                        coluna1 = 3;
+                        lc = false;
+                        break;
+                    case "E":
+                        coluna1 = 4;
+                        lc = false;
+                        break;
+                    case "F":
+                        coluna1 = 5;
+                        lc = false;
+                        break;
+                    case "G":
+                        coluna1 = 6;
+                        lc = false;
+                        break;
+                    case "H":
+                        coluna1 = 7;
+                        lc = false;
+                        break;
+                }
+            }
+
+            int[][] mapa = {
+                    {0, 1, 0, 0, 0, 1, 0, 0},
+                    {0, 0, 0, 1, 0, 0, 1, 0},
+                    {0, 0, 0, 0, 0, 0, 0, 0},
+                    {1, 1, 0, 0, 0, 1, 0, 0},
+                    {0, 0, 0, 1, 0, 1, 1, 1},
+                    {0, 1, 0, 1, 0, 0, 0, 0},
+                    {0, 0, 0, 0, 0, 0, 1, 0},
+                    {0, 1, 0, 1, 0, 0, 0, 0},
+            };
+            if (mapa[linha][coluna1] == 0) {
+                System.out.println("Você acertou a água");
+            } else {
+                System.out.println("Você acertou o barco");
+            }
+        }
+    }
+
+    public static void exe2() {
+        //Escreva um algoritmo que peça o numero
+        Scanner in = new Scanner(System.in);
 
     }
+
+    public static void exe6() {
+        Scanner in = new Scanner(System.in);
+        int soma = 0;
+for (int i = 0; i < 5; i++) {
+    System.out.println("Informe 5 números, inteiros: ");
+    soma += in.nextInt();
+}System.out.println("A soma dos 5 números é " + soma );
+    }
+
+    /*
+
+           /* while (linha > 7) {
+                System.out.println("Linha inválida"); break;
+            } if (linha < 0 ) {
+                System.out.println("Linha inválida"); continue;
+            }else {
+                System.out.println("Linha válida");
+            }
         }
+        for (int i = 0; i < 7; i++) {
+            System.out.println("Informe uma coluna de 0 até 7");
+            int coluna = in.nextInt();
+
+            while (coluna > 7) {
+                System.out.println("Coluna inválida"); continue;
+            } if (coluna < 0 ) {
+                System.out.println("Coluna inválida"); continue;
+            }else {
+                System.out.println("Coluna válida");
+            }
+        }
+        //int[] sub1 = [1][4]
+        //Batalha naval
+        int[][] mapa = {
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0},
+
+        }; */
+
+
+    //Escreva um algoritmo que peça ao usuário para digitar uma frase e retorne a quantidade de caracteres " " que existem na frase
+    public static void exe() {
+        Scanner in = new Scanner(System.in);
+        int espacos = 0;
+        System.out.println("Digite uma frase");
+        String frase = in.nextLine();
+
+        for (int a = 0; a < frase.length(); a++) {
+            if (frase.charAt(a) == ' ') {
+                espacos++;
+            }
+        }
+        System.out.println("Essa frase possui " + espacos + " espaços");
+    }
+}
