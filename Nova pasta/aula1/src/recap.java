@@ -1,10 +1,10 @@
-import java.awt.font.FontRenderContext;
+
 import java.util.Locale;
 import java.util.Scanner;
 
 public class recap {
     public static void main(String[] args) {
-      exe6();
+        exersalaprintsnap();
 
     }
 
@@ -172,7 +172,7 @@ public class recap {
         }
     }
 
-//batalha naval
+    //batalha naval
     public static void batalhanaval() {
         Scanner in = new Scanner(System.in);
         boolean lc = true;
@@ -251,10 +251,11 @@ public class recap {
     public static void exe6() {
         Scanner in = new Scanner(System.in);
         int soma = 0;
-for (int i = 0; i < 5; i++) {
-    System.out.println("Informe 5 números, inteiros: ");
-    soma += in.nextInt();
-}System.out.println("A soma dos 5 números é " + soma );
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Informe 5 números, inteiros: ");
+            soma += in.nextInt();
+        }
+        System.out.println("A soma dos 5 números é " + soma);
     }
 
     /*
@@ -307,5 +308,22 @@ for (int i = 0; i < 5; i++) {
             }
         }
         System.out.println("Essa frase possui " + espacos + " espaços");
+    }
+
+    public static void exersalaprintsnap() {
+        Scanner in = new Scanner(System.in);
+        int coluna, linha;
+        System.out.print("Infornme o número de linhas: ");
+        linha = in.nextInt();
+        System.out.print("Infornme o número de colunas: ");
+        coluna = in.nextInt();
+        for (int i = 0; i < linha; i++) {
+            for (int j = 0; j < coluna;){
+                j++;
+                System.out.print("#");
+            }
+
+            System.out.println("#");
+        }
     }
 }
