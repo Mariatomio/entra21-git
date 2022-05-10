@@ -22,10 +22,11 @@ public class Avantutor {
             if (codeusuario.equalsIgnoreCase(code)) {
                 System.out.println("Bem vindo");
                 break;
-            } else{
+            } else {
                 System.out.println("Login incorreto. Tente novamente: ");
                 codeusuario2++;
-            } if (codeusuario2 == 3){
+            }
+            if (codeusuario2 == 3) {
                 System.out.println("Você foi bloqueado");             //tem coisa para arrumar
                 //CHECAR NOVAMENTE
             }
@@ -38,14 +39,14 @@ public class Avantutor {
         int tentativa = 0;
         int max = 3;
         String code = "91352";
-         int a = 0;
+        int a = 0;
         while (tentativa <= max) {
             System.out.println("Digite o PIN: ");
             String codeusuario1 = in.nextLine();
             if (codeusuario1.equalsIgnoreCase(code)) {
                 System.out.println("Bem vindo!");
                 break;
-            } else{
+            } else {
                 System.err.println("Tente novamente");
                 tentativa++;
             }
@@ -57,33 +58,33 @@ public class Avantutor {
         }
     }
 
-            public static void exegeovanneavantutor () {
-                Scanner sc = new Scanner(System.in);
-                System.out.println("Altura:");
-                int altura = sc.nextInt();
-                System.out.println("Largura:");
-                int largura = sc.nextInt();
-                for (int i = 0; i < altura; i++) {
-                    for (int j = 0; j < largura; j++) {
-                        System.out.print("#");
-                        if (j == largura - 1) {
-                            System.out.print("\n");
-                        }
-                    }
+    public static void exegeovanneavantutor() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Altura:");
+        int altura = sc.nextInt();
+        System.out.println("Largura:");
+        int largura = sc.nextInt();
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("#");
+                if (j == largura - 1) {
+                    System.out.print("\n");
                 }
             }
+        }
+    }
 
-            public static void exegeovanne2avantutor () {
-                Scanner sc = new Scanner(System.in);
-                int res = 0;
-                System.out.println("Escreva um número para calcular fatorial:");
-                int num = sc.nextInt();
-                for (int i = num - 1; i > 0; i--) {
-                    res = num * i;
-                    num = res;
-                }
-                System.out.println("O fatorial é: " + res);
-            }
+    public static void exegeovanne2avantutor() {
+        Scanner sc = new Scanner(System.in);
+        int res = 0;
+        System.out.println("Escreva um número para calcular fatorial:");
+        int num = sc.nextInt();
+        for (int i = num - 1; i > 0; i--) {
+            res = num * i;
+            num = res;
+        }
+        System.out.println("O fatorial é: " + res);
+    }
 
     public static void fatorialdenumeromeu() {
         //for, um next int e uma saida, isso é o que vai usar
@@ -91,9 +92,9 @@ public class Avantutor {
         int multi = 0;
         System.out.println("Escolha um nº para fatorial");
         int fatorial = in.nextInt();
-        for (int i = fatorial - 1; i > 0; i--){ //i-- é para decrementar
+        for (int i = fatorial - 1; i > 0; i--) { //i-- é para decrementar
             multi = fatorial * i;
-           fatorial = multi; // POR QUE USOU ISSO?! // pegar ft pq o lucas fez diferente
+            fatorial = multi; // POR QUE USOU ISSO?! // pegar ft pq o lucas fez diferente
         }
         System.out.println("O nº fatorial é " + multi);
     }
@@ -115,14 +116,16 @@ Você pode ignorar o caso para o nome de usuário, mas não para a senha.*/
         String[] senha = {"Senha1", "Senha2", "Senha3"};
         for (int i = 0; i < usuario.length; i++) {
             System.out.println("Informe seu nome de usuário: ");
-            String usuario1 = in.nextLine();;
+            String usuario1 = in.nextLine();
+            ;
             System.out.println("Informe sua senha: ");
             in.next();
             String senha1 = in.nextLine();
-            if (usuario1.equalsIgnoreCase(usuario[i]) && senha1.equals(senha[i])){
+            if (usuario1.equalsIgnoreCase(usuario[i]) && senha1.equals(senha[i])) {
                 System.out.println("Seu login é: " + usuario1 +
-                        "Sua senha é: " + senha1); break;
-            }else{
+                        "Sua senha é: " + senha1);
+                break;
+            } else {
                 System.out.println("Login incorreto");
                 System.out.println("Senha incorreta");
             }
@@ -135,7 +138,7 @@ Você pode ignorar o caso para o nome de usuário, mas não para a senha.*/
     public static void JOGODAVELHA() {
         String jogador1 = "O";
         String jogador2 = "X";
-        int CONTROLE = 0;
+        //int CONTROLE = 0;
         Scanner in = new Scanner(System.in);
         boolean posicao = true;
         int linha = 0;
@@ -182,18 +185,31 @@ Você pode ignorar o caso para o nome de usuário, mas não para a senha.*/
                     break;
 
             }
-        }
 
-        int posição = in.nextInt();
-        String[][] mapa = {
-                {"[]", "[]", "[]"},
-                {"[]", "[]", "[]"},
-                {"[]", "[]", "[]"},
-        };
+        }
+    }
+/* String G;
+    public String ganhou(int jogadas) {
+ String() G= new String(0){}
+        return null;
+    } */
+        String[][] mapa = {{"1","2","3"},{"4","5","6"},{"7","8","9"}};
+
+    public String[][] getMapa() {
+        return mapa;
+    }
+
+    public boolean valido(String p){
+            for (int li = 0; li < 3; li++){
+                for (int co = 0; co < 3; co++){
+                    if (mapa[li][co].equals(p))
+                        return true;
+                }
+            } return false;
       //if ()
     }
             public static void main (String[]args){
-        exercicotestedpsjogodavelha();
+        JOGODAVELHA();
  /*System.out.println("Escolher 'O' ou 'X'");
         System.out.println("jogador 1: ");
         String jogador1 = in.nextLine();
