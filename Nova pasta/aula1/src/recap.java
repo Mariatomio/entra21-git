@@ -1,11 +1,10 @@
-import java.awt.font.FontRenderContext;
+
 import java.util.Locale;
 import java.util.Scanner;
 
 public class recap {
     public static void main(String[] args) {
        exegeovanne2();
-
     }
 
     public static void exe1() {
@@ -322,7 +321,7 @@ public class recap {
         System.out.print("Infornme o número de colunas: ");
         coluna = in.nextInt();
         for (int i = 0; i < linha; i++) {
-            for (int j = 0; j < coluna; ) {
+            for (int j = 0; j < coluna;){
                 j++;
                 System.out.print("#");
             }
