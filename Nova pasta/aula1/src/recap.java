@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class recap {
     public static void main(String[] args) {
-      exe6();
+       exegeovanne2();
 
     }
 
@@ -21,6 +21,7 @@ public class recap {
         in.next(); // espera o usuário digitar, pega td o q foi digitado
         in.nextInt(); // espera digitar valores inteiros
         in.nextDouble(); // espera numeros decimais
+        in.nextLine();
 
         // operações aritméticas
         var1 = 10 + 10;
@@ -129,7 +130,10 @@ public class recap {
 
         System.out.println(var3.contains("djsdhkhs")); //contains() checa se o texto informado
         // informado contém  String do parâmetro
+
         System.out.println(var3.split("")); //["D", "d you know... quebre no numero informado/espaço
+        // vai separar toda vez que tiver espaço
+
         System.out.println(var3.strip()); // strip() remove os espaços do começo e do final do texto
 
         String[] splitted = var3.split(""); // irá quebrar o texto no delimitador  e tira fora os espaços e retornará uma lista das palavras
@@ -138,7 +142,7 @@ public class recap {
             System.out.println(word);
         }
 
-        System.out.println(var3.substring(5, 8)); // pega os valores que estãp entre o "5 e 8"
+        System.out.println(var3.substring(5, 8)); // pega os valores que estão entre o "5 e 8"
 
         //concat
 
@@ -158,7 +162,7 @@ public class recap {
         int[][] numeros3 = {{0, 1, 2, 3, 4,}, {5, 6, 7, 8, 9}}; // cada uma das chaves de dentro é uma linha e cada nº uma coluna ex:2 linhas e 5 colunas
         int[][] numeros4 = new int[2][5]; //duas linhas e 5 colunas igual a de cima
         System.out.println(numeros3[0][2]); // recuperando um valor de uma matriz
-        numeros4[1] = new int[]{7, 8, 9, 0}; // inserindo uma lista em uma linha
+        numeros4[1] = new int[]{7, 8, 9, 0}; // inserindo uma lista em uma linha, colocando um dado em posição certa
         numeros4[0][0] = 9; // inserindo dados em uma posção de matriz
 
         System.out.println(numeros3.length); // numero de linhas da matriz
@@ -172,7 +176,7 @@ public class recap {
         }
     }
 
-//batalha naval
+    //batalha naval
     public static void batalhanaval() {
         Scanner in = new Scanner(System.in);
         boolean lc = true;
@@ -251,10 +255,11 @@ public class recap {
     public static void exe6() {
         Scanner in = new Scanner(System.in);
         int soma = 0;
-for (int i = 0; i < 5; i++) {
-    System.out.println("Informe 5 números, inteiros: ");
-    soma += in.nextInt();
-}System.out.println("A soma dos 5 números é " + soma );
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Informe 5 números, inteiros: ");
+            soma += in.nextInt();
+        }
+        System.out.println("A soma dos 5 números é " + soma);
     }
 
     /*
@@ -307,5 +312,50 @@ for (int i = 0; i < 5; i++) {
             }
         }
         System.out.println("Essa frase possui " + espacos + " espaços");
+    }
+
+  /*  public static void exersalaprintsnap() {
+        Scanner in = new Scanner(System.in);
+        int coluna, linha;
+        System.out.print("Infornme o número de linhas: ");
+        linha = in.nextInt();
+        System.out.print("Infornme o número de colunas: ");
+        coluna = in.nextInt();
+        for (int i = 0; i < linha; i++) {
+            for (int j = 0; j < coluna; ) {
+                j++;
+                System.out.print("#");
+            }
+
+            System.out.println("#");
+        }
+    } ESSE DEU ERRADO FALTA O MENOS 1 NO FINAÇ */
+
+    public static void exegeovanne() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Altura:");
+        int altura = sc.nextInt();
+        System.out.println("Largura:");
+        int largura = sc.nextInt();
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("#");
+                if (j == largura - 1) {
+                    System.out.print("\n");
+                }
+            }
+        }
+    }
+
+    public static void exegeovanne2() {
+        Scanner sc = new Scanner(System.in);
+        int res = 0;
+        System.out.println("Escreva um número para calcular fatorial:");
+        int num = sc.nextInt();
+        for (int i = num - 1; i > 0; i--) {
+            res = num * i;
+            num = res;
+        }
+        System.out.println("O fatorial é: " + res);
     }
 }
