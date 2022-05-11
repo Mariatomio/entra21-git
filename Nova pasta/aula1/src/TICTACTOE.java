@@ -11,7 +11,7 @@ public class TICTACTOE {
         JV jogo = new JV();
         String posições;
         while (true) { //--------------------------------------------------------------
-            System.out.println(":::: JOGO DA VELHA ::::");
+            System.out.println(":: JOGO DA VELHA ::");
             jogo.Mostrar();
 
             do {//jogador1..............................................

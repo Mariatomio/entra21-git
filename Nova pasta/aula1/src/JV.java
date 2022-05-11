@@ -1,5 +1,5 @@
 public class JV {
-    String[][] mapa = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}};
+    String[][] mapa = {{"|1", "2", "3|"}, {"|4", "5", "6|"}, {"|7", "8", "9|"}};
 
     public String Mostrar() {
         for (int li = 0; li < 3; li++) {
