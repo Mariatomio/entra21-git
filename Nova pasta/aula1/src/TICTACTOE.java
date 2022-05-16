@@ -56,11 +56,11 @@ public class TICTACTOE {
                 break;
             }
         }
-        System.out.println("O " + jogo.Ganhou(jogadas)+ " venceu!");
+        System.out.println("O " + jogo.Ganhou(jogadas) + " venceu!");
     }
-}
 
-    /*public String Mostrar() {
+
+    public String Mostrar() {
         for (int li = 0; li < 3; li++) {
             for (int co = 0; co < 3; co++) {
                 System.out.printf("   " + mapa[li][co]);
@@ -126,7 +126,9 @@ public class TICTACTOE {
                 vencedor = "Jogador 2";
             }
         }
-        return vencedor; */
+        return vencedor;
+    }
+}
     /*00; 01; 02;
      10; 11; 12
      20; 21; 22*/

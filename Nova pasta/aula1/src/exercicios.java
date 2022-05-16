@@ -5,11 +5,15 @@ import java.util.function.DoubleBinaryOperator;
 
 public class exercicios {
     public static void main(String[] args) {
+<<<<<<< HEAD
 
 
         exe18();
 
 
+=======
+
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
     }
 
     //exercise 1
@@ -54,7 +58,10 @@ public class exercicios {
 
         System.out.println();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
     }
 
     public static void exe04() {
@@ -117,6 +124,7 @@ public class exercicios {
         novoSalario = salario + (salario * (reajuste / 100));
         System.out.printf("\n\nSalario novo = R$ %.2f\n", novoSalario);
     }
+<<<<<<< HEAD
 
     public static void exe23() {
         Scanner in = new Scanner(System.in);
@@ -128,10 +136,25 @@ public class exercicios {
 
         System.out.printf("\nInforme o percentual de reajuste:\n");
         reajuste = in.nextDouble();
+=======
 
-        novoSalario = salario + ((salario * reajuste) / 100);
-        System.out.printf(("Salario novo = R$ %.2f\n "), novoSalario);
-    }
+    public static void exe23() { // nao é o 23
+
+            Scanner in = new Scanner(System.in);
+            System.out.println("Exercicio 6");
+            double salario, reajuste, novoSalario;
+
+            System.out.printf("Informe o salario mensal:\n");
+            salario = in.nextDouble();
+
+            System.out.printf("\nInforme o percentual de reajuste:\n");
+            reajuste = in.nextDouble();
+
+            novoSalario = salario + ((salario * reajuste) / 100);
+            System.out.printf(("Salario novo = R$ %.2f\n "), novoSalario);
+        }
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
+
 
     public static void exe07() {
         Scanner in = new Scanner(System.in);
@@ -215,11 +238,15 @@ public class exercicios {
         if (vendas > 1500)
             System.out.println("Seu salário final: " + salarioextra);
         // o erro que ta dando é que nn sabe qnd as vendas são maiores que 1500 pois dai no salário normal ele calcula como 0.03 * ...
+<<<<<<< HEAD
     }
 
     public static void numeromaiorque10() {
         Scanner in = new Scanner(System.in);
 
+=======
+
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
         System.out.println("Escolha um número");
         double num = in.nextDouble();
         if (num >= 10) {
@@ -243,6 +270,7 @@ public class exercicios {
             System.out.println("negativo");
         }
     }
+
 
     public static void exe13() {
         System.out.println("Exercicio 13");
@@ -371,69 +399,75 @@ public class exercicios {
         }
     }
 
+
     public static void exe20() {
-        System.out.println("Exercicio 20");
-        Scanner in = new Scanner(System.in);
-        System.out.println("Digite seu salário fixo");
-        double salario = in.nextDouble();
 
-        System.out.println("Digite o valor das suas vendas efetuadas");
-        double vendas = in.nextDouble();
+            System.out.println("Exercicio 20");
+            Scanner in = new Scanner(System.in);
+            System.out.println("Digite seu salário fixo");
+            double salario = in.nextDouble();
 
-        //salário abaixo de 1500
+            System.out.println("Digite o valor das suas vendas efetuadas");
+            double vendas = in.nextDouble();
 
-        if (vendas <= 1500) {
-            double salarionormal = salario + (vendas * 0.03);
-            System.out.println("Seu salário final: " + salarionormal);
-        } else {
-            double salarionormal = salario + (1500 * 0.03);
-            double salarioextra = salarionormal + ((vendas - 1500) * 0.05);
-            System.out.println("Seu salário final: " + salarioextra);
-        }
-    }
+            //salário abaixo de 1500
 
-    public static void exe21() {
-        System.out.println("Exercicio 21");
-        Scanner in = new Scanner(System.in);
-        double saldo;
-        String cartao;
-        double credito;
-        double debito;
-        double saldoatual;
-        System.out.println("Digite o nº do seu cartão");
-        cartao = in.nextLine();
-        System.out.println("Digite o saldo do seu cartão");
-        saldo = in.nextDouble();
-        System.out.println("Digite o valor de débito do seu cartão");
-        debito = in.nextDouble();
-        System.out.println("Digite o valor de crédito do seu cartão");
-        credito = in.nextDouble();
-        saldoatual = saldo - debito + credito;
-        System.out.printf("\nSeu saldo atual: R$ %.2f ", saldoatual);
-        if (saldoatual >= 0) {
-            System.out.println("Saldo Positivo");
-        } else
-            System.out.println("Saldo Negativo");
-    }
-
-    public static void exe22() {
-        System.out.println("Exercicio 22");
-        Scanner in = new Scanner(System.in);
-        double estoque, maxest, minest, quantidademedia;
-        System.out.println("Digite a quantidade atual de estoque");
-        estoque = in.nextDouble();
-        System.out.println("Digite a quantidade máxima de estoque");
-        maxest = in.nextDouble();
-        System.out.println("Digite a quantidade mínima de estoque");
-        minest = in.nextDouble();
-        quantidademedia = ((maxest + minest) / 2);
-        System.out.println(quantidademedia);
-        if (estoque >= quantidademedia) {
-            System.out.println("Não efetuar compra");
-        } else {
-            System.out.println("Efetuar compra");
+            if (vendas <= 1500) {
+                double salarionormal = salario + (vendas * 0.03);
+                System.out.println("Seu salário final: " + salarionormal);
+            } else {
+                double salarionormal = salario + (1500 * 0.03);
+                double salarioextra = salarionormal + ((vendas - 1500) * 0.05);
+                System.out.println("Seu salário final: " + salarioextra);
+            }
         }
 
+        public static void exe21 () {
+            System.out.println("Exercicio 21");
+            Scanner in = new Scanner(System.in);
+            double saldo;
+            String cartao;
+            double credito;
+            double debito;
+            double saldoatual;
+            System.out.println("Digite o nº do seu cartão");
+            cartao = in.nextLine();
+            System.out.println("Digite o saldo do seu cartão");
+            saldo = in.nextDouble();
+            System.out.println("Digite o valor de débito do seu cartão");
+            debito = in.nextDouble();
+            System.out.println("Digite o valor de crédito do seu cartão");
+            credito = in.nextDouble();
+            saldoatual = saldo - debito + credito;
+            System.out.printf("\nSeu saldo atual: R$ %.2f ", saldoatual);
+            if (saldoatual >= 0) {
+                System.out.println("Saldo Positivo");
+            } else
+                System.out.println("Saldo Negativo");
+        }
+
+        public static void exe22 () {
+            System.out.println("Exercicio 22");
+            Scanner in = new Scanner(System.in);
+            double estoque, maxest, minest, quantidademedia;
+            System.out.println("Digite a quantidade atual de estoque");
+            estoque = in.nextDouble();
+            System.out.println("Digite a quantidade máxima de estoque");
+            maxest = in.nextDouble();
+            System.out.println("Digite a quantidade mínima de estoque");
+            minest = in.nextDouble();
+            quantidademedia = ((maxest + minest) / 2);
+            System.out.println(quantidademedia);
+            if (estoque >= quantidademedia) {
+                System.out.println("Não efetuar compra");
+            } else {
+                System.out.println("Efetuar compra");
+            }
+
+        }
     }
+<<<<<<< HEAD
 }
 
+=======
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
