@@ -5,13 +5,11 @@ import java.util.function.DoubleBinaryOperator;
 
 public class exercicios {
     public static void main(String[] args) {
-<<<<<<< HEAD
-        exe20();
-=======
+
 
         exe18();
 
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
     }
 
     //exercise 1
@@ -34,11 +32,11 @@ public class exercicios {
         System.out.println("exercicio2");
         System.out.print("Digite um valor");
         int valor = in.nextInt();
-<<<<<<< HEAD
+
         System.out.println("seu antecessor é " + (--valor));
-=======
+
         System.out.println("Seu antecessor é " + --valor);
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
 
     }
 
@@ -53,10 +51,10 @@ public class exercicios {
         System.out.println("a base é " + base);
         System.out.println("a área do retângulo é " + base * altura);
         System.out.println("o perímetro é " + (base + base + altura + altura));
-<<<<<<< HEAD
+
         System.out.println();
-=======
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
+
     }
 
     public static void exe04() {
@@ -85,7 +83,7 @@ public class exercicios {
         int nulo = in.nextInt();
         System.out.println("Quantidade de votos validos");
         System.out.println(pessoa - (branco + nulo));
-<<<<<<< HEAD
+
         System.out.print("A porcentagem de pessoas que votaram em branco é de ");
         double var = (branco * 100) / pessoa;
         System.out.println(var + "%");
@@ -95,23 +93,23 @@ public class exercicios {
         System.out.println(var2 + "%");
         System.out.println();
         System.out.println();
-        System.out.print("A porcentagem de votos válidos é de " );
+        System.out.print("A porcentagem de votos válidos é de ");
         double var3 = ((pessoa - (branco + nulo)) * 100) / pessoa;
         System.out.println(var3 + "%");
-=======
+
         System.out.printf("\nA porcentagem de pessoas que votaram em branco é de %.2f", ((branco * 100.0) / pessoa));
         System.out.print("%");
         System.out.printf("\nA porcentagem de pessoas que votaram nulo é de %.2f ", ((nulo * 100.0) / pessoa), "%");
         System.out.print("%");
         System.out.printf("\nA porcentagem de votos válidos é de %.2f ", (((pessoa - (branco + nulo)) * 100.0) / pessoa));
         System.out.print("%\n");
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
     }
 
     public static void exe06() {
         Scanner ler = new Scanner(System.in);
-<<<<<<< HEAD
-double salario, reajuste, novoSalario;
+
+        double salario, reajuste, novoSalario;
         System.out.printf("Informe o salário mensal:\n");
         salario = ler.nextDouble();
         System.out.printf("\nInforme o percentual de reajuste:\n");
@@ -119,16 +117,17 @@ double salario, reajuste, novoSalario;
         novoSalario = salario + (salario * (reajuste / 100));
         System.out.printf("\n\nSalario novo = R$ %.2f\n", novoSalario);
     }
-    public static void exe20() {
-=======
+
+    public static void exe23() {
+        Scanner in = new Scanner(System.in);
         System.out.println("Exercicio 6");
         double salario, reajuste, novoSalario;
 
         System.out.printf("Informe o salario mensal:\n");
-        salario = ler.nextDouble();
+        salario = in.nextDouble();
 
         System.out.printf("\nInforme o percentual de reajuste:\n");
-        reajuste = ler.nextDouble();
+        reajuste = in.nextDouble();
 
         novoSalario = salario + ((salario * reajuste) / 100);
         System.out.printf(("Salario novo = R$ %.2f\n "), novoSalario);
@@ -198,7 +197,7 @@ double salario, reajuste, novoSalario;
 
     public static void exe11() {
         System.out.println("Exercicio 11");
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
         Scanner in = new Scanner(System.in);
         System.out.println("Digite seu salário fixo");
         double salario = in.nextDouble();
@@ -209,19 +208,18 @@ double salario, reajuste, novoSalario;
         //salário abaixo de 1500
         double
                 salarionormal = salario + (vendas * 0.03);
-        if (vendas <= 1500){
+        if (vendas <= 1500) {
             System.out.println("Seu salário final: " + salarionormal);
         }
-        double salarioextra = (salarionormal + (0.05*(vendas - 1500)));
+        double salarioextra = (salarionormal + (0.05 * (vendas - 1500)));
         if (vendas > 1500)
             System.out.println("Seu salário final: " + salarioextra);
         // o erro que ta dando é que nn sabe qnd as vendas são maiores que 1500 pois dai no salário normal ele calcula como 0.03 * ...
     }
-}
 
+    public static void numeromaiorque10() {
+        Scanner in = new Scanner(System.in);
 
-<<<<<<< HEAD
-=======
         System.out.println("Escolha um número");
         double num = in.nextDouble();
         if (num >= 10) {
@@ -231,7 +229,7 @@ double salario, reajuste, novoSalario;
         }
         System.out.println();
     }
->>>>>>> 21f8c0749a8a49f5dc47d7c375063c086cb854ad
+
 
     public static void exe12() {
         Scanner in = new Scanner(System.in);
@@ -344,12 +342,12 @@ double salario, reajuste, novoSalario;
         if (hr <= 160) {
             recebemes = (valor * 160);
             System.out.println("Seu salário final será R$ " + recebemes);
-        }else{
-        //salário com hora extra
+        } else {
+            //salário com hora extra
             recebemes = (valor * 160);
-        double salarioextra = hr - 160;
-        double salariofinalextra = (recebemes + (salarioextra * (valor+valor*0.50)));
-        System.out.println("Seu salário final será R$ " + salariofinalextra);
+            double salarioextra = hr - 160;
+            double salariofinalextra = (recebemes + (salarioextra * (valor + valor * 0.50)));
+            System.out.println("Seu salário final será R$ " + salariofinalextra);
         }
         //1460 reais de 175 hrs e 8 hrs
     }
@@ -438,3 +436,4 @@ double salario, reajuste, novoSalario;
 
     }
 }
+
