@@ -35,7 +35,7 @@ public class TICTACTOE {
             if (!jogo.Ganhou(jogadas).equals("null")) {
                 break;
             }
-            do {//jogador2..............................................
+        do {//jogador2..............................................
                 System.out.println("Informe um posição, Jogador 2: ");
                 posições = in.next();
                 while (!jogo.Valido(posições)) {

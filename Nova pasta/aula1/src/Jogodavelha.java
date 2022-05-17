@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Jogodavelha {
     public static void main(String[] args) {
+
     }
 
     public static void JOGODAVELHA() {
@@ -16,43 +17,42 @@ public class Jogodavelha {
             System.out.println("Escolha um n de 1 até 9: ");
             int posicao1 = in.nextInt();
             switch (posicao1) {
-                case 1:
+                case 1 -> {
                     linha = 0;
                     coluna = 0;
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     linha = 0;
                     coluna = 1;
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     linha = 0;
                     coluna = 2;
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     linha = 1;
                     coluna = 0;
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     linha = 1;
                     coluna = 1;
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     linha = 1;
                     coluna = 2;
-                    break;
-                case 7:
+                }
+                case 7 -> {
                     linha = 2;
                     coluna = 0;
-                    break;
-                case 8:
+                }
+                case 8 -> {
                     linha = 2;
                     coluna = 1;
-                    break;
-                case 9:
+                }
+                case 9 -> {
                     linha = 2;
                     coluna = 2;
-                    break;
-
+                }
             }
         }
     }

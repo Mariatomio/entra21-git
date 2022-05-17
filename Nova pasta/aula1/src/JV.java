@@ -16,7 +16,7 @@ public class JV {
     public boolean Valido(String p) {
         for (int li = 0; li < 3; li++) {
             for (int co = 0; co < 3; co++) {
-                if (mapa[li][co].equals(p))
+                if (mapa[li][co].replace("|", "").equals(p))
                     return true;
             }
         }
