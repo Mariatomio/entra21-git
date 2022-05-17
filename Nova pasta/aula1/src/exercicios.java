@@ -5,7 +5,15 @@ import java.util.function.DoubleBinaryOperator;
 
 public class exercicios {
     public static void main(String[] args) {
+<<<<<<< HEAD
 
+
+        exe18();
+
+
+=======
+
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
     }
 
     //exercise 1
@@ -50,6 +58,10 @@ public class exercicios {
 
         System.out.println();
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
     }
 
     public static void exe04() {
@@ -112,6 +124,19 @@ public class exercicios {
         novoSalario = salario + (salario * (reajuste / 100));
         System.out.printf("\n\nSalario novo = R$ %.2f\n", novoSalario);
     }
+<<<<<<< HEAD
+
+    public static void exe23() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Exercicio 6");
+        double salario, reajuste, novoSalario;
+
+        System.out.printf("Informe o salario mensal:\n");
+        salario = in.nextDouble();
+
+        System.out.printf("\nInforme o percentual de reajuste:\n");
+        reajuste = in.nextDouble();
+=======
 
     public static void exe23() { // nao é o 23
 
@@ -128,6 +153,7 @@ public class exercicios {
             novoSalario = salario + ((salario * reajuste) / 100);
             System.out.printf(("Salario novo = R$ %.2f\n "), novoSalario);
         }
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
 
 
     public static void exe07() {
@@ -212,7 +238,15 @@ public class exercicios {
         if (vendas > 1500)
             System.out.println("Seu salário final: " + salarioextra);
         // o erro que ta dando é que nn sabe qnd as vendas são maiores que 1500 pois dai no salário normal ele calcula como 0.03 * ...
+<<<<<<< HEAD
+    }
 
+    public static void numeromaiorque10() {
+        Scanner in = new Scanner(System.in);
+
+=======
+
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84
         System.out.println("Escolha um número");
         double num = in.nextDouble();
         if (num >= 10) {
@@ -432,3 +466,8 @@ public class exercicios {
 
         }
     }
+<<<<<<< HEAD
+}
+
+=======
+>>>>>>> 7004852a1824afbaf422c0aaaea0a2cd82c41e84

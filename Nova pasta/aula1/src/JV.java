@@ -23,31 +23,31 @@ public class JV {
         return false;
     }//-------------------------------------------------------------
 
-    public void Jogada(String p, String Jogador) {
+    public void Jogada(String p, String J) {
         if (p.equals("1"))
-            mapa[0][0] = Jogador;
+            mapa[0][0] = J;
         else if (p.equals("2"))
-            mapa[0][1] = Jogador;
+            mapa[0][1] = J;
         else if (p.equals("3"))
-            mapa[0][2] = Jogador;
+            mapa[0][2] = J;
         else if (p.equals("4"))
-            mapa[1][0] = Jogador;
+            mapa[1][0] = J;
         else if (p.equals("5"))
-            mapa[1][1] = Jogador;
+            mapa[1][1] = J;
         else if (p.equals("6"))
-            mapa[1][2] = Jogador;
+            mapa[1][2] = J;
         else if (p.equals("7"))
-            mapa[2][0] = Jogador;
+            mapa[2][0] = J;
         else if (p.equals("8"))
-            mapa[2][1] = Jogador;
+            mapa[2][1] = J;
         else if (p.equals("9"))
-            mapa[2][2] = Jogador;
+            mapa[2][2] = J;
     }//------------------------------------------------
 
-    public String Ganhou(int jogadas) {
+    public String Ganhou(int jogada) {
         String[] G = new String[8];
         String vencedor = "null";
-        if (jogadas == 9) {
+        if (jogada == 9) {
             vencedor = "Empate!";
         } //vencer linha
         G[0] = mapa[0][0] + mapa[0][1] + mapa[0][2];
