@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicioarrayematrz {
+public class ExerciciousandoFOR {
     public static Scanner in = new Scanner(System.in); //todos os métodos podem acessar ele
 
     public static void main(String[] args) {
