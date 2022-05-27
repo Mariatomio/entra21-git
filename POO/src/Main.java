@@ -1,4 +1,5 @@
 import classes.*;
+import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.Scanner;
 public class Main {
@@ -22,7 +23,7 @@ public class Main {
 
                 break;
             case 3:
-                 lanche = new Mistoquente();
+                lanche = new Mistoquente();
 
                 break;
             case 4:
@@ -36,26 +37,50 @@ public class Main {
             default:
                 System.err.println("Escolha uma opção válida!");
         }
-if (escolha == 1 || escolha == 2) {
-    System.out.println("Lanche aberto? (S/N)");
-    in.nextLine();
-    String aberto = in.next();
-    ((XBurguer) lanche).aberto = aberto.equalsIgnoreCase("S");
-}
-if (escolha == 5) {
-    System.out.println("Borda recheada? (S/N)");
-    in.nextLine();
-    String borda = in.next();
-    ((MiniPizza) lanche).bordarecheada = borda.equalsIgnoreCase("S");
-    MiniPizza miniPizza =  ((MiniPizza) lanche);
-if (miniPizza.bordarecheada){
-       System.out.println("Qual o sabor da borda?");
-    in.nextLine();
-    String saborborda = in.next();
-    miniPizza.saborborda = saborborda;
-}
-}
-        System.out.print("Informe o valor de "+lanche.tipo+": R$");
+        if (escolha == 1 || escolha == 2) {
+            System.out.println("Lanche aberto? (S/N)");
+            in.nextLine();
+            String aberto = in.next();
+            ((XBurguer) lanche).aberto = aberto.equalsIgnoreCase("S");
+        }
+        if (escolha == 5) {
+            System.out.println("Borda recheada? (S/N)");
+            in.nextLine();
+            String borda = in.next();
+            ((MiniPizza) lanche).bordarecheada = borda.equalsIgnoreCase("S");
+            MiniPizza miniPizza = ((MiniPizza) lanche);
+            if (miniPizza.bordarecheada) {
+                System.out.println("Qual o sabor da borda?");
+                in.nextLine();
+                String saborborda = in.next();
+                miniPizza.saborborda = saborborda;
+            }
+        }
+        if (lanche instanceof Sanduiche) {
+            Sanduiche add = ((Sanduiche) lanche);
+
+            System.out.println("Gostaria de adicional? S/N");
+            in.nextLine();
+            String adicional = in.nextLine();
+            if (adicional.equalsIgnoreCase("S")) {
+                System.out.println("Deseja quantos adicionais?");
+                int quantidadeadd = in.nextInt();
+                in.nextLine();
+                for (int i = 0; i < quantidadeadd; i++) {
+                    System.out.println("Qual adicional você quer colocar?");
+                    ((Sanduiche) lanche).adicionarIngredientes(in.nextLine());
+                    if (i == 9) {
+                        System.err.println("Quantidade máxima de adicionais");
+                        break;
+                    }
+                }
+            }
+        }
+
+        //add = adicional.equalsIgnoreCase("S");
+
+
+        System.out.print("Informe o valor de " + lanche.tipo + ": R$");
         lanche.valor = in.nextDouble();
         lanche.montarComanda();
     }

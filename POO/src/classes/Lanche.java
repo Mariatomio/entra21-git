@@ -1,6 +1,6 @@
 package classes;
 
-public class Lanche {
+public abstract class Lanche {
     public String[] ingredientes = new String[10];
     public double valor;
 
