@@ -1,0 +1,8 @@
+batata
+frita: boolean
+
+setFrita(boolean):void
+this.Frita = valor dentro do parenteses
+
+getFrita(): boolean
+return this.Frita

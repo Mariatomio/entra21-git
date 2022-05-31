@@ -3,7 +3,7 @@ package classes;
 import java.util.Scanner;
 
 public abstract class Sanduiche extends Lanche {
-    public String[] adicionais = new String[10];
+    private String[] adicionais = new String[10];
 
     public void adicionarIngredientes(String adicional) {
         for (int i = 0; i < 10; i++) {
