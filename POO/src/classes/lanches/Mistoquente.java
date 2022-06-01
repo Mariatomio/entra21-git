@@ -1,4 +1,4 @@
-package classes;
+package classes.lanches;
 
 public class Mistoquente extends Sanduiche{
     public Mistoquente() {
