@@ -6,7 +6,7 @@ public class MiniPizza extends Lanche {
     private String sabor;
 
 
-        //massa, molho de tomate, mussarela TODAS
+    //massa, molho de tomate, mussarela TODAS
     //4 queijos: provolone; cheddar, catupiry
     //freango e catupiry
     //tomate e manjericão: marguerita
@@ -25,7 +25,7 @@ public class MiniPizza extends Lanche {
         this.setSabor(sabor); //mexendo com o atribudo e atualizando o sabor
         switch (sabor.toUpperCase()) {
             case "4 QUEIJOS":
-               this.adicionarIngrediente("Provolone");
+                this.adicionarIngrediente("Provolone");
                 this.adicionarIngrediente("Cheddar");
                 this.adicionarIngrediente("Catupiry");
                 break;
@@ -58,31 +58,30 @@ public class MiniPizza extends Lanche {
         }*/
     }
 
-    @Override
-    public void montarComanda() {
-        super.montarComanda();
-        if (this.isBordarecheada()) {
-            System.out.println("borda recheada: "+ this.getSaborborda());
-        }
-    }
 
     //GETTERS & SETTERS-------------------------------------------------------------------------------------------------
 
-    public void setBordarecheada(boolean bordarecheada) {
+    public void setBordarecheada(boolean bordarecheada)
+    {
         this.bordarecheada = bordarecheada;
     }
+
     public boolean isBordarecheada() {
         return this.bordarecheada;
     }
+
     public void setSaborborda(String saborborda) {
         this.saborborda = saborborda;
     }
+
     public String getSaborborda() {
         return this.saborborda;
     }
-    public void setSabor (String sabor){
+
+    public void setSabor(String sabor) {
         this.sabor = sabor;
     }
+
     public String getSabor() {
         return this.sabor;
     }

@@ -11,13 +11,5 @@ public class XSalada extends XBurguer{
         this.adicionarIngrediente("Maionese");
         this.setTipo("XSalada");
     }
-    @Override
-    public void montarComanda() {
-        super.montarComanda();
-        if (this.aberto) {
-            System.out.println("-- LANCHE ABERTO --");
-        }
 
-
-    }
 }

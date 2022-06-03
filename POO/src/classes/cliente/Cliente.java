@@ -7,7 +7,7 @@ public class Cliente {
     private String nome;
     private Pedido pedido;
 
-    public Cliente(){
+    public Cliente() {
         this.setPedido(new Pedido()); // assim o pedido só existe com o cliente e visse e versa
         //new pq toda vez que criar um cliente cria um novo pedido
     }
@@ -20,10 +20,11 @@ public class Cliente {
         this.pedido = pedido;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getNome(){
+
+    public String getNome() {
         return this.nome;
     }
 

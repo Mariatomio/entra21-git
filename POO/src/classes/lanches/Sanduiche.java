@@ -5,25 +5,19 @@ public abstract class Sanduiche extends Lanche {
 
     public void adicionarIngredientes(String adicional) {
         for (int i = 0; i < 10; i++) {
-            if(this.adicionais[i] == null) {
+            if (this.adicionais[i] == null) {
                 this.adicionais[i] = adicional;
                 break;
             }
         }
-    }
-    @Override
-    public void montarComanda() {
-        super.montarComanda();
-        if (adicionais[0] != null){
-            System.out.println("ADICIONAIS: ");
 
-        }
-        for (String adicional: this.adicionais) {
-            if (adicional != null) {
-                System.out.println(adicional);
-            }
-        }
+    }
+
+    public String[] getAdicionais() {
+        return adicionais;
+    }
+
+    public void setAdicionais(String[] adicionais) {
+        this.adicionais = adicionais;
     }
 }
-
-

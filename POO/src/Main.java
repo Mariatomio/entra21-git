@@ -1,12 +1,31 @@
+import classes.cliente.Cliente;
 import classes.lanches.*;
+import classes.pedido.Pedido;
 
 import java.util.Scanner;
 public class Main {
     public static  Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
-        montarLanche();
+        Cliente cl = new Cliente();
+        System.out.println("Insira o nome do cliente: ");
+        cl.setNome(in.nextLine());//metodo não tem atribuição
+        for (int i = 0; i < 10; i++) {
+           cl.getPedido().adicionarLanche(montarLanche());
+           if (i == 9) {
+               System.err.println("Número máximo de pedidos atingidos");
+               break;
+           }
+            System.out.println("Deseja mais um lanche? (S/N)");
+            if (in.nextLine().equalsIgnoreCase("N")){
+                break;
+            }
+        }
+        System.out.println("Pedido de: " + cl.getNome());
+        cl.getPedido().imprimircomanda();
+
+
     }
-    private static void montarLanche(){
+    private static Lanche montarLanche(){
         System.out.println("-MENU: Escolha uma opção-");
         System.out.println("(1) - X-Salada");
         System.out.println("(2) - X-Burguer");
@@ -122,8 +141,10 @@ public class Main {
 
         System.out.print("Informe o valor de " + lanche.getTipo() + ": R$");
         lanche.setValor(in.nextDouble());
-        lanche.montarComanda();
+        in.nextLine();
+        return lanche;
     }
+
 }
 //GET pegar um valor q ja foi dado, se booleano is+nomedafunçâo
 //SET tu vai dar um valor a variável
