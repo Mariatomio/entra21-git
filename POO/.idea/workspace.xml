@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7189a449-46cf-47dd-8a51-c9a31ce4a982" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../ListaTarefas" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaTarefas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaTarefas/src/classe/listaTarefas/ListaTarefa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaTarefas/src/classe/listaTarefas/ListaTarefa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
