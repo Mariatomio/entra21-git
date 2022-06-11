@@ -15,6 +15,8 @@ public abstract class Lanche {
         }
     }
 
+
+    public abstract void mostrarDetalhesNaComanda(); //força tudo ter a cara dele
     public void setValor(Double valor) {
         this.valor = valor;
     }

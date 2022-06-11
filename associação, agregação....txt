@@ -1,0 +1,21 @@
+Associação: um terceiro liga eles, exemplo main
+
+Agregação: TEM UM pra algo, os dois não deixam de existir mas eles
+
+Composição:É PARTE DE/ É FORMADO DE, aluno não vai ser aluno se não tiver uma matrícula, por exemplo, se nn tiver matrícula
+não tem aluno
+
+
+-----------------COMPOSIÇÃO:--------------------------
+
+|TREM| <PINTADO>----------LOCOMOTIVA
+           |--------------VAGÕES
+O TREM não existe sem eles mas eles existem sem o trem
+
+------------------------------------------------------
+                 DIAGRAMA:
+
+1..1= SÓ CRIA UM ATRIBUTO COM O NOME
+1..n= CRIA UM ATRIBUTO COM UMA LISTA ARRAYS
+
+------------------------------------------------------
