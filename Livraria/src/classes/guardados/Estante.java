@@ -6,7 +6,7 @@ import java.awt.font.FontRenderContext;
 
 public class Estante {
     private int capMaxima;
-    private Item[] itens;
+    private static Item[] itens;
 
     public Estante(int capMaxima) {
         setCapMaxima(capMaxima);
@@ -69,7 +69,7 @@ public class Estante {
         this.capMaxima = capMaxima;
     }
 
-    public Item[] getItens() {
+    public static Item[] getItens() {
         return itens;
     }
 
