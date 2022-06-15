@@ -120,5 +120,9 @@ public class MiniPizza extends Lanche {
     }
 
 
+    @Override
+    public void mostrarDetalhesNaComanda() {
+
+    }
 }
 

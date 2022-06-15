@@ -92,18 +92,18 @@ public class Main {
                         break;
                     }
                 }
-<<<<<<< HEAD
+
                 if (escolha == 3) {
                     System.out.println("Estante atualizada!");
                     System.out.println("----------------------");
                     MostrarAEstante();
-=======
+
                     }
             if (escolha == 4) {
                 System.out.println("Deseja retornar ao menu? (S/N)");
                 if (in.nextLine().equalsIgnoreCase("S")){
                     break;
->>>>>>> a95c1ecbd4a618e2c7c090383395c65b472fb09c
+
                 }
             }
 
@@ -169,10 +169,9 @@ public class Main {
                 System.err.println("Não foi possível adicionar item a estante");
             } else {
                 System.out.println("Item adicionado com sucesso!");
-<<<<<<< HEAD
-=======
+
                 System.out.println();
->>>>>>> a95c1ecbd4a618e2c7c090383395c65b472fb09c
+
             }
         }
     }
@@ -182,7 +181,7 @@ public class Main {
         String titulo = in.next();
         in.nextLine();
         int contador = 0;
-<<<<<<< HEAD
+
         for (Item i : e.getItens()) {
             if (i != null && i.getTitulo().toLowerCase().contains(titulo.toLowerCase())) {
                 System.out.println("------------------------");
