@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7189a449-46cf-47dd-8a51-c9a31ce4a982" name="Changes" comment="" />
+    <list default="true" id="7189a449-46cf-47dd-8a51-c9a31ce4a982" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/out/production/Livraria/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/classes/guardados/Estante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/out/production/Livraria/classes/guardados/Estante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

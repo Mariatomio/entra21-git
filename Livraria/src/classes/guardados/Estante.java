@@ -6,7 +6,7 @@ import java.awt.font.FontRenderContext;
 
 public class Estante {
     private int capMaxima;
-    private Item[] itens;
+    private static Item[] itens;
 
     public Estante(int capMaxima) {
         setCapMaxima(capMaxima);
@@ -54,8 +54,8 @@ public class Estante {
        }
 
     public Item removerItem(int posicao) {
-         Item i = this.getItens()[posicao]; // SALVA NA VARIAVEL PARA DEPOIS DEIXAR NULL E RETORNAR
-         this.getItens()[posicao] = null;
+         Item i = getItens()[posicao]; // SALVA NA VARIAVEL PARA DEPOIS DEIXAR NULL E RETORNAR
+         getItens()[posicao] = null;
          return i; //para retornar o valor no caso o nome e mostrar ele, senão ele se perderia
         }
 
@@ -69,7 +69,7 @@ public class Estante {
         this.capMaxima = capMaxima;
     }
 
-    public Item[] getItens() {
+    public static Item[] getItens() {
         return itens;
     }
 

@@ -98,52 +98,12 @@ public class Main {
                     System.err.println("Escolha um sabor  válido");
 
             }
-            if (lanche instanceof pizza) {
-                System.out.println("Informe o tamanho da pizza: ");
-                System.out.println("XS - broto");
-                System.out.println("SM - pequena");
-                System.out.println("MD - média");
-                System.out.println("LG - grande");
-                System.out.println("XL - família");
-                ((pizza) lanche).setTamanho(in.nextLine().toUpperCase());
-            }
-
-            System.out.println("Borda recheada? (S/N)");
-            String borda = in.nextLine();
-            miniPizza.setBordarecheada(borda.equalsIgnoreCase("S"));
-            if (miniPizza.isBordarecheada()) {
-                System.out.println("Qual o sabor da borda?");
-                //String saborborda = in.next();
-                miniPizza.setSaborborda(in.nextLine());
-            }
-        }
-
-        if (lanche instanceof Sanduiche) {
-            Sanduiche add = ((Sanduiche) lanche);
-
-            System.out.println("Gostaria de adicional? S/N");
+            lanche.montarDetalhesLanche(in);
+            System.out.print("Informe o valor do(a) "+lanche.getTipo()+": R$");
+            lanche.setValor(in.nextDouble());
             in.nextLine();
-            String adicional = in.nextLine();
-            if (adicional.equalsIgnoreCase("S")) {
-                System.out.println("Deseja quantos adicionais?");
-                int quantidadeadd = in.nextInt();
-                in.nextLine();
-                for (int i = 0; i < quantidadeadd; i++) {
-                    System.out.println("Qual adicional você quer colocar?");
-                    ((Sanduiche) lanche).adicionarIngredientes(in.nextLine());
-                    if (i == 9) {
-                        System.err.println("Quantidade máxima de adicionais");
-                        break;
-                    }
-                }
-            }
+            return lanche;
         }
-
-        System.out.print("Informe o valor de " + lanche.getTipo() + ": R$");
-        lanche.setValor(in.nextDouble());
-        in.nextLine();
-        return lanche;
-    }
 
 }
 //GET pegar um valor q ja foi dado, se booleano is+nomedafunçâo
