@@ -1,0 +1,72 @@
+ARRAYLIST:
+nome.remove()
+nome.clear(), limpar array
+nome.size()
+set(troca a posição), (1,"BMW"), informar a posição 
+nome.get()
+nome.add()
+ArrayList <> slah = new ArrayList<>();
+ArrayList <Integer> slah = new ArrayList<Integer>();
+
+*usar esse: guardar e acessar os dados da lista
+
+[OBJETO, OBJETO ,OBJETO]
+
+LINKEDLIST:
+
+LISTA--> OBJ --> OBJ --> OBJ
+
+*usar esse: manipulação com os dados da lista
+nome.remove()
+nome.clear(), limpar array
+nome.size()
+set(troca a posição), (1,"BMW"), informar a posição 
+nome.get()
+nome.add()
+add na primeira
+add na ultima
+remover da primeira 
+add a primeira
+...
+
+---------------------------------------------------------------------------------------
+
+HASHMAP:
+
+indice começa em 0.
+
+Hashmap<String, String> capitalCities = new Hashmap<String, String >(); criando o Hashmap
+
+*para adicionar um valor PUT:
+CapitalCities.put("England", "London" );
+
+*para recuperar um valor GET:
+capitalCities.get("England");
+
+*para remover REMOVE:
+capitalCities.get("England");
+
+*limpar:
+ nome.Clear();
+
+*tamanho:
+ nome.size();
+
+INTERAR:
+sobre key
+for(String i: capitalCities.keySet()) {
+sout(i)
+}
+
+sobre valores
+for(String i: capitalCities.values()) {
+sout(i)
+}
+
+sobre slah oq
+for(String i: capitalCities.keySet()) {
+sout( + i+)
+}
+
+
+

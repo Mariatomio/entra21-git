@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" afterDir="false" />
-    </list>
+    <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

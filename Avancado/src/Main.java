@@ -5,7 +5,7 @@ public class Main {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        exe03();
+        Exe04();
     }
 
     public static void exe01() {
@@ -88,6 +88,12 @@ public class Main {
         System.out.println("----------------------------------------");
         System.out.println("Palavras que tenham mais caracteres que o nº informado"+palavras);
         }
+
+        public static void Exe04() {
+
+        }
+
+
     }
 
 
