@@ -1,8 +1,8 @@
 package exerciciotreinarALcarro;
 
-public class Carroexercicio {
+public class Carro {
     private String modelo;
-    private double valorVenda;
+    private double valor;
 
     public String getModelo() {
         return modelo;
@@ -12,11 +12,11 @@ public class Carroexercicio {
         this.modelo = modelo;
     }
 
-    public double getValorVenda() {
-        return valorVenda;
+    public double getValor() {
+        return valor;
     }
 
-    public void setValorVenda(double valorVenda) {
-        this.valorVenda = valorVenda;
+    public void setValor(double valorVenda) {
+        this.valor = valorVenda;
     }
 }

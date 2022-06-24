@@ -5,9 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcbe3718-d178-411f-8e9d-fa748b31b021" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Assento/Assento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assento/Aviao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assento/MeioTransporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assento/Onibus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/exerciciotreinarALcarro/Carroexercicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/exerciciotreinarALcarro/MainCarro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maindesnecessaria/Mainoutra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maindesnecessaria/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Carroexercicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exerciciotreinarALcarro/MainCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Lanche.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Lanche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/MiniPizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/MiniPizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Mistoquente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Mistoquente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Sanduiche.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Sanduiche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XBurguer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XBurguer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XSalada.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XSalada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/pedido/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/pedido/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/HotDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/HotDog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Lanche.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Lanche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Mistoquente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Mistoquente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +55,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2AaLTXPyZu02CUtqbAQgzGhHU55" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,22 +72,21 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MainCarro">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.exerciciotreinarALcarro.Main">
+    <configuration name="exerciciotreinarALcarro.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exerciciotreinarALcarro.Main" />
       <module name="Avancado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exerciciotreinarALcarro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main2" />
-      <module name="Avancado" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="exerciciotreinarALcarro.MainCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exerciciotreinarALcarro.MainCarro" />
       <module name="Avancado" />
       <extension name="coverage">
@@ -67,11 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="maindesnecessaria.Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="maindesnecessaria.Main2" />
+      <module name="Avancado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maindesnecessaria.Mainoutra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="maindesnecessaria.Mainoutra" />
+      <module name="Avancado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainCarro" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.exerciciotreinarALcarro.Main" />
+        <item itemvalue="Application.exerciciotreinarALcarro.MainCarro" />
+        <item itemvalue="Application.maindesnecessaria.Main2" />
+        <item itemvalue="Application.maindesnecessaria.Mainoutra" />
       </list>
     </recent_temporary>
   </component>

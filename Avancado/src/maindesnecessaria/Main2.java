@@ -1,3 +1,4 @@
+package maindesnecessaria;
 
 import java.util.*;
 public class Main2 {
