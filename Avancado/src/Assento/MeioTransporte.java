@@ -12,6 +12,8 @@ public interface MeioTransporte {
         // TODO: 23/06/2022  
 
     Assento getAssento(String assento);
+
+    Assento getAssento(String assento, String classe);
 // TODO: 23/06/2022  
 
 

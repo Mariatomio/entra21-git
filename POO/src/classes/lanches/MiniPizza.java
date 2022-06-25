@@ -2,40 +2,36 @@ package classes.lanches;
 
 import java.util.Scanner;
 
-public class MiniPizza extends Lanche {
-    private boolean bordarecheada;
-    private String saborborda;
+public class MiniPizza extends Lanche{
+
+    private boolean bordaRecheada;
+    private String saborBorda;
     private String sabor;
-
-
-
-
     public MiniPizza() {
+        this.adicionarIngrediente("Massa");
         this.adicionarIngrediente("Massa de tomate");
         this.adicionarIngrediente("Mozzarella");
-        this.adicionarIngrediente("Massa da pizza");
-        this.setTipo("Mini pizza");
-
+        this.setTipo("Mini Pizza");
     }
 
     public void adicionarSaborEIngredientes(String sabor) {
-        this.setSabor(sabor); //mexendo com o atribudo e atualizando o sabor
-        switch (sabor.toUpperCase()) {
+        this.setSabor(sabor);
+        switch(sabor.toUpperCase()) {
             case "4 QUEIJOS":
-                this.adicionarIngrediente("Provolone");
                 this.adicionarIngrediente("Cheddar");
                 this.adicionarIngrediente("Catupiry");
+                this.adicionarIngrediente("Provolone");
                 break;
             case "CALABRESA":
                 this.adicionarIngrediente("Calabresa");
                 break;
             case "FRANGO C/ CATUPIRY":
-                this.adicionarIngrediente("Catupiry");
                 this.adicionarIngrediente("Frango");
+                this.adicionarIngrediente("Catupiry");
                 break;
             case "MARGUERITA":
                 this.adicionarIngrediente("Tomate");
-                this.adicionarIngrediente("Mangericão");
+                this.adicionarIngrediente("Majericão");
                 break;
             case "PORTUGUESA":
                 this.adicionarIngrediente("Presunto");
@@ -45,24 +41,20 @@ public class MiniPizza extends Lanche {
         }
     }
 
-
-    //GETTERS & SETTERS-------------------------------------------------------------------------------------------------
-
-    public void setBordarecheada(boolean bordarecheada)
-    {
-        this.bordarecheada = bordarecheada;
+    public void setBordaRecheada(boolean bordaRecheada) {
+        this.bordaRecheada = bordaRecheada;
     }
 
-    public boolean isBordarecheada() {
-        return this.bordarecheada;
+    public boolean isBordaRecheada() {
+        return this.bordaRecheada;
     }
 
-    public void setSaborborda(String saborborda) {
-        this.saborborda = saborborda;
+    public void setSaborBorda(String saborBorda) {
+        this.saborBorda = saborBorda;
     }
 
-    public String getSaborborda() {
-        return this.saborborda;
+    public String getSaborBorda() {
+        return this.saborBorda;
     }
 
     public void setSabor(String sabor) {
@@ -73,7 +65,12 @@ public class MiniPizza extends Lanche {
         return this.sabor;
     }
 
-@Override
+    @Override
+    public void mostrarDetalhesNaComanda() {
+
+    }
+
+    @Override
     public void mostrarDetalhesComanda() {
         System.out.println("====" + this.getTipo() + " - " + this.getSabor() + "====");
         if (this.isBordaRecheada()) {
@@ -117,12 +114,6 @@ public class MiniPizza extends Lanche {
             System.out.println("Qual o sabor da borda?");
             this.setSaborBorda(in.nextLine());
         }
-    }
-
-
-    @Override
-    public void mostrarDetalhesNaComanda() {
-
     }
 }
 

@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1fa8b29-3a0a-42ff-a9bb-d7f4d6e5958e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Voo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/MeioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/MeioTransporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/Onibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/Onibus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Lanche.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Lanche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/MiniPizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/MiniPizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Mistoquente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Mistoquente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Sanduiche.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/Sanduiche.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XBurguer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XBurguer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XSalada.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/XSalada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/pedido/Pedido.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/pedido/Pedido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/HotDog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/HotDog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Lanche.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Lanche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/MiniPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Mistoquente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Mistoquente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,13 +53,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="open Main.java" />

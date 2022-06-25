@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcbe3718-d178-411f-8e9d-fa748b31b021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Assento/Assento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assento/Aviao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assento/MeioTransporte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assento/Onibus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Avancado/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Avancado/exerciciotreinarALcarro/Carroexercicio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Avancado/exerciciotreinarALcarro/MainCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maindesnecessaria/Mainoutra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maindesnecessaria/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Carroexercicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exerciciotreinarALcarro/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exerciciotreinarALcarro/MainCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assento/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assento/MainAssento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assento/MainAssento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assento/MeioTransporte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assento/MeioTransporte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assento/Onibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assento/Onibus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/classes/lanches/HotDog.class" afterDir="false" />
@@ -36,6 +28,8 @@
       <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/Sanduiche.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/lanches/XBurguer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/classes/pedido/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../voo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../voo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../voo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../voo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +66,20 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.exerciciotreinarALcarro.Main">
+  <component name="RunManager" selected="Application.MainAssento">
+    <configuration name="MainAssento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assento.MainAssento" />
+      <module name="Avancado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="exerciciotreinarALcarro.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exerciciotreinarALcarro.Main" />
       <module name="Avancado" />
@@ -115,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainAssento" />
         <item itemvalue="Application.exerciciotreinarALcarro.Main" />
         <item itemvalue="Application.exerciciotreinarALcarro.MainCarro" />
         <item itemvalue="Application.maindesnecessaria.Main2" />

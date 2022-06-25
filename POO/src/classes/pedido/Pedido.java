@@ -8,26 +8,23 @@ public class Pedido {
 
     private ArrayList<Lanche> lanches = new ArrayList<>();
 
-    public void imprimircomanda() {
+    public void imprimirComanda() {
         for (Lanche l : this.getLanches()) {
-
             l.mostrarDetalhesComanda();
             System.out.println("-INGREDIENTES-");
             for (String ingrediente : l.getIngredientes()) {
                 System.out.println(ingrediente);
             }
-            System.out.println();
-            System.out.println("------------------------------------");
-            System.out.printf("Valor total do pedido: R$%.2f\n", this.calcularValorTotal());
-            System.out.println("------------------------------------");
+            System.out.printf("Valor: R$%.2f\n", l.getValor());
         }
+        System.out.printf("Valor total do pedido: R$%.2f\n", this.calcularValorTotal());
+        System.out.println("------------------------------------");
     }
-
 
     public double calcularValorTotal() {
         double vlrTotal = 0;
         for (Lanche l : this.getLanches()) {
-            vlrTotal += l.getvalor();
+            vlrTotal += l.getValor();
         }
         return vlrTotal;
     }
@@ -38,13 +35,5 @@ public class Pedido {
 
     public ArrayList<Lanche> getLanches() {
         return this.lanches;
-    }
-
-
-//Agregação -> tem um
-//Composição -> é parte
-//herança -> é um
-
-    private void getLanches() {
     }
 }

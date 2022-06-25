@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7189a449-46cf-47dd-8a51-c9a31ce4a982" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/exerciciotreinarALcarro/Carroexercicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/exerciciotreinarALcarro/MainCarro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Mainoutra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Carroexercicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/MainCarro.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

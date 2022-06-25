@@ -7,4 +7,9 @@ public class Mistoquente extends Sanduiche{
         this.adicionarIngrediente("Pão");
         this.setTipo("Misto Quente");
     }
+
+    @Override
+    public void mostrarDetalhesNaComanda() {
+
+    }
 }

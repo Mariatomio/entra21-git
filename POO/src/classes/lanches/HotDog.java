@@ -14,4 +14,8 @@ public class HotDog extends Sanduiche{
         this.setTipo("Hot Dog");
     }
 
+    @Override
+    public void mostrarDetalhesNaComanda() {
+
+    }
 }
