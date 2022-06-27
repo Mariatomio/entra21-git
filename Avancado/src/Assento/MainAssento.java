@@ -6,9 +6,12 @@ public class MainAssento {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Informe a quantidade de linhas");
-        Onibus o = new Onibus(in.nextInt());
+        //System.out.println("Informe a quantidade de linhas");
+        Aviao a = new Aviao(5,5);
 
-         o.mostrarAssentos();
+       // System.out.println("Informe a quantidade de linhas");
+      // Onibus o = new Onibus(in.nextInt());
+         a.mostrarAssentos();
+        //o.mostrarAssentos();
     }
 }
