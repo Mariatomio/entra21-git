@@ -7,11 +7,16 @@ public class MainAssento {
 
     public static void main(String[] args) {
         //System.out.println("Informe a quantidade de linhas");
-        Aviao a = new Aviao(5,5);
+        Aviao aviao = new Aviao(20,20);
+        System.out.println("Escolha uma classe: ");
+            aviao.mostrarAssentos();
+
+
 
        // System.out.println("Informe a quantidade de linhas");
       // Onibus o = new Onibus(in.nextInt());
-         a.mostrarAssentos();
+
+
         //o.mostrarAssentos();
     }
 }

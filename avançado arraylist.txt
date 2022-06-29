@@ -63,10 +63,44 @@ for(String i: capitalCities.values()) {
 sout(i)
 }
 
-sobre slah oq
+sobre slah oq/ os dois
 for(String i: capitalCities.keySet()) {
 sout( + i+)
 }
 
+---------------------------------------------------------------------------------------
+HashSet Valores unicos; sse adicionar dois valores iguais só printa um
+---------------------------------------------------------------------------------------
 
 
+**** 1.n ou slah oq[] é para usar ARRAYLIST
+
+---------------------------------------------------------------------------------------
+Enum (Static final)
+Enum class(){
+Beer:
+KF, KO;
+}
+
+final class Berr extends java.lang.Enum{
+public static finalBeer KF = new Beer();
+public static finalBeer KO = new Beer();
+}
+
+Constutores são privados
+só um nome (as instâncias)
+constantes com letras MAIUSCULAS
+
+enum month{
+jan,feb,apr,may,jun,jul
+}
+CONSTANTES DO TIPO MÊS, EXPECIFICO
+
+
+public enum Seasons (SPRING, SUMMER, FALL, WINTER
+)
+
+
+enum coins{
+PENNY(1), NICKEL(5), DIME(10), QUARTER(25)
+}

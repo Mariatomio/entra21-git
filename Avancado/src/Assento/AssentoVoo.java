@@ -2,7 +2,7 @@ package Assento;
 
 public class AssentoVoo extends Assento {
     private String codigo;
-    private String classe;
+    private ClassesAssentoVoo classe;
 
 
 
@@ -15,11 +15,11 @@ public class AssentoVoo extends Assento {
         this.codigo = codigo;
     }
 
-    public String getClasse() {
+    public ClassesAssentoVoo getClasse() {
         return classe;
     }
 
-    public void setClasse(String classe) {
+    public void setClasse(ClassesAssentoVoo classe) {
         this.classe = classe;
     }
 }

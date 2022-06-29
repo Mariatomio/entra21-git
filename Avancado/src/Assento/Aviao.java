@@ -1,11 +1,12 @@
 package Assento;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Aviao implements MeioTransporte {
     private ArrayList<AssentoVoo> listvoo = new ArrayList<>();
 
-    public Aviao(int linhasCadeirasLuxo, int classeeconomica) {
+    public Aviao(int linhasCadeirasLuxo, int linhasCadeirasEconomicas) {
         /*1  2  3  4
         * 5  6  7  8
         * 9  10 11 12
@@ -14,26 +15,55 @@ public class Aviao implements MeioTransporte {
         * 21 22 23 24
         * 25 26 27 28
         * 29 30 31 32 */
-        int linha = 1;
-        for (int i = 1; i < linhasCadeirasLuxo * 4; i++) {
-            if (i > linha * 4) {
-                linha++;
-            }
-            AssentoVoo assentoVoo = new AssentoVoo();
-            assentoVoo.setClasse("LUXO");
-            if (i % 4 == 0 && i % 2 == 0) {
-                assentoVoo.setCodigo("D" + (linha));
-            } else if (i % 2 == 0  ) {
-                assentoVoo.setCodigo("B" + (linha));
-            } else if (i % 3 == 0 || i % i == 0 ) {
-                assentoVoo.setCodigo("A" + (linha));
-            } else{
-                assentoVoo.setCodigo("C" + (linha));
-            }
-            this.getListvoo().add(assentoVoo);
+      /*  String[] listaLuxo = {"A", "B", "C", "D"};
+        for (int i = 1; i <= linhasCadeirasLuxos; i++) {
+AssentoVoo a = new AssentoVoo();
+a.setClasse(ClassesAssentoVoo.LUXO);
+listvoo.add(a);
         }
+            for (int j = 0; j < 4; j++) {
+                AssentoVoo a = new AssentoVoo();
+                a.setClasse(ClassesAssentoVoo.LUXO);
+                if (i < 10){
+                    a.setCodigo(listaLuxo[j]+"0"+i);
+                    listvoo.add(a);
+                }else {
+                    a.setCodigo(listaLuxo[j] + i);
+                    listvoo.add(a);
+                }
+
+            }
 
 
+        String[] listaEconomica = {"A", "B", "C", "D", "E", "F"};
+        for (int i = 1; i <= linhasCadeirasEconomicas; i++) {
+            //for (int j = 0; j < listaEconomica.length; j++) {
+                for (int j = 0; j < 6*linhasCadeirasEconomicas; j++) {
+                AssentoVoo a = new AssentoVoo();
+                a.setClasse(ClassesAssentoVoo.ECONOMICA);
+                a.setCodigo(listaEconomica[j] + i);
+                listvoo.add(a);
+            }
+        }
+*/
+        String codigoAssentos = "ABCD";
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < linhasCadeirasLuxo; j++) {
+                AssentoVoo a = new AssentoVoo();
+                a.setCodigo(String.valueOf(codigoAssentos.charAt(i))+j);
+                a.setClasse(ClassesAssentoVoo.LUXO);
+                listvoo.add(a);
+            }
+        }
+        codigoAssentos = "ABCDEF";
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < linhasCadeirasEconomicas; j++) {
+                AssentoVoo a = new AssentoVoo();
+                a.setCodigo(String.valueOf(codigoAssentos.charAt(i))+j);
+                a.setClasse(ClasseAssentoVoo.ECONOMICA);
+                assentos.add(a);
+            }
+        }
 
 
 
@@ -76,32 +106,69 @@ public class Aviao implements MeioTransporte {
 
     @Override
     public void mostrarAssentos() {
-        for(int i = 0; i < this.getListvoo().size(); i++){
-            if(this.getListvoo().get(i).getClasse().equalsIgnoreCase("LUXO")){
-                System.out.print("["+getListvoo().get(i).getCodigo()+"]");
-                if((i+1)%4==0){
-                    System.out.println();
+            int contadorLuxo = 0;
+            int contadorEconomica = 0;
+            for (AssentoVoo a : listvoo) {
+                if (a.getClasse().equals("luxo")) {
+                    System.out.println("----------------Classe LUXO----------------");
+                    contadorLuxo++;
+                    if (a.isOcupado()){
+                        System.out.println("[XX]");
+                    } /*else {
+                        if (a.getCodigo().contains("A") || a.getCodigo().contains("[XX]")){
+                            System.out.print("     ");
+                        }*/
+                        if ((contadorLuxo % 4 == 0)) {
+                            System.out.print("[" + a.getCodigo() + "]\n");
+                        } else {
+                            System.out.print("[" + a.getCodigo() + "] ");
+                        }
+                    }
+
+
+                if (a.getClasse().equals("economico")) {
+                    contadorEconomica++;
+                    if (a.isOcupado()){
+                        System.out.println("[XX]");
+                    } else {
+                        if ((contadorEconomica % 6 == 0)) {
+                            System.out.print("[" + a.getCodigo() + "]\n");
+                        } else {
+                            System.out.print("[" + a.getCodigo() + "] ");
+                        }
+                    }
+                }
+
+                if(contadorLuxo % 2 == 0 && contadorLuxo % 4 != 0){
+                    System.out.print("|| ");
+                }
+
+                if (contadorEconomica % 3 == 0 && contadorEconomica % 6 != 0){
+                    System.out.print("|| ");
                 }
             }
+        }
+
+
+
+     /*   for(int i = 0; i < this.getListvoo().size(); i++){
+            if(this.getListvoo().get(i).getClasse().equalsIgnoreCase("LUXO")){
+                System.out.print("["+getListvoo().get(i).getCodigo()+"]");
+                if(i%4==0 ){
+                    System.out.println(" ");
+                }
+                if (listvoo.get(i).isOcupado()) {
+                    System.out.print("[XX]");
+                }
+
+            }*/
             /*if(this.getListvoo().get(i).getClasse().equalsIgnoreCase("ECONOMICA")){
                 System.out.print("["+getListvoo().get(i).getCodigo()+"]");
                 if((i+1)%6==0){
                     System.out.println();
                 }
             }*/
-        }
-
-
-
-
-
-
-
-
-
-
-
-
+      //  }
        /* String a = "A";
         String b = "B";
         String c = "C";
@@ -128,7 +195,7 @@ public class Aviao implements MeioTransporte {
             }
         }
 */
-    }
+   // }
 
 
     @Override
@@ -140,9 +207,9 @@ public class Aviao implements MeioTransporte {
     }
         return null;
     }
-    public Assento getAssento(String assento, String classe) {
+    public Assento getAssento(String assento, ClassesAssentoVoo classe) {
         for (AssentoVoo voo: listvoo){
-            if (voo.getCodigo().equalsIgnoreCase(assento) && voo.getClasse().equalsIgnoreCase(classe)){
+            if (voo.getCodigo().equalsIgnoreCase(assento) && voo.getClasse().equals(classe)){
                 return voo;
             }
         }
