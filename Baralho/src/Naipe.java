@@ -1,16 +1,17 @@
 public enum Naipe {
     //naipe string
-    COPAS("Copas"), PAUS("Paus"), ESPADAS("Espadas"), OURO("ouro");
-    private String Naipes;
-    Naipe (String Naipes){
-        this.Naipes = Naipes;
+    PAUS("♣"),
+    OURO("♦"),
+    ESPADA("♠"),
+    COPAS("♥");
+
+    private final String naipe;
+
+    Naipe(String naipe) {
+        this.naipe = naipe;
     }
 
-    public String getNaipes() {
-        return Naipes;
-    }
-
-    public void setNaipes(String naipes) {
-        Naipes = naipes;
+    public String getNaipe() {
+        return this.naipe;
     }
 }

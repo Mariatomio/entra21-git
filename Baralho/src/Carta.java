@@ -1,19 +1,34 @@
+import baralho.Baralho;
+
 import java.awt.font.FontRenderContext;
 import java.util.ArrayList;
 
 public class Carta {
-    ArrayList<Object> Cartas = new ArrayList<>();
-    //override da carta metodo tostring
-   /* private String Naipe;
-    private String ValorCarta;*/
+    private Naipe naipe;
+    private ValorCarta valor;
+    private int valorReal;
+private Baralho baralho;
+    public int getValorReal() {
+        return valorReal;
+    }
 
-    public static Naipe escolherNaipe(){
-        /*Naipe escolha = null;*/
-        Carta c = new Carta();
-        c.Cartas.add(Naipe.values());
-        for (Naipe naipe : Naipe.values()){
-            System.out.println(c.naipe.getNaipes());
-        }
-        return escolha;
+    public void setValorReal(int valorReal) {
+        this.valorReal = valorReal;
+    }
+
+    public Naipe getNaipe() {
+        return naipe;
+    }
+
+    public void setNaipe(Naipe naipe) {
+        this.naipe = naipe;
+    }
+
+    public ValorCarta getValor() {
+        return valor;
+    }
+
+    public void setValor(ValorCarta valor) {
+        this.valor = valor;
     }
 }

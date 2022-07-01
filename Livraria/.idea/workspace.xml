@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Avancado/src/Assento/ClassesAssentoVoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Baralho/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Baralho/src/playesOption/PlayesOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Mainassento.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Mainassento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/AssentoVoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/AssentoVoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../avançado arraylist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../avançado arraylist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Carta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/Naipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Naipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../voo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../voo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

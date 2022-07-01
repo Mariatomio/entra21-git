@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1fa8b29-3a0a-42ff-a9bb-d7f4d6e5958e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/MainAssento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Carta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/Naipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Naipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

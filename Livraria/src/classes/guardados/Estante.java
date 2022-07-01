@@ -3,61 +3,40 @@ package classes.guardados;
 import classes.itens.Item;
 
 import java.awt.font.FontRenderContext;
+import java.util.ArrayList;
 
 public class Estante {
     private int capMaxima;
-    private static Item[] itens;
+    /*private static Item[] itens;*/
+    private ArrayList<Item> itens = new ArrayList<>();
 
     public Estante(int capMaxima) {
         setCapMaxima(capMaxima);
-        setItens(new Item[capMaxima]);
-        for (int i = 0; i < capMaxima; i++) {
-
-        }
     }
 
     public boolean estanteCheia() {
-        return this.quantidadeItens() ==this.getCapMaxima();
+        return this.quantidadeItens() == this.getCapMaxima();
     }
 
-    public int quantidadeItens() { //vê quantos itens tem
-        int contador = 0;
-        for (Item i : getItens()) { //NÃO SE PREOCUPA COM POSIÇÃO, NÃO DA PARA COLOCAR UM ARRAY
-            if (i != null) {
-                contador++;
-        }
-        }
-        return contador;
+    public int quantidadeItens() {
+        return this.itens.size();
     }
 
     public Item buscarItem(String titulo) {
-        //ir de posição em posição
-        for (Item i : this.getItens()) {
-            if (i != null && i.getTitulo().toLowerCase().contains(titulo.toLowerCase())) {
-               return i;
-            }
-        }
-        return null;
+              return this.itens.stream().filter(i -> i.getTitulo().equalsIgnoreCase(titulo)).findFirst().orElse(null);
     }
 
 
     public boolean adicionarItem(Item item) {
-        for (int i = 0; i < this.getItens().length; i++) {
-            if (this.getItens()[i] == null) {
-                this.getItens()[i] = item;
-                return true;
-            }
-        }
-        return false;
-      // if (quantidadeItens() != getCapMaxima()) { DARIA PARA FAZER A RETORNA FALSE
-
+       if (!estanteCheia()){
+           return this.itens.add(item);
        }
+       return false;
+    }
 
     public Item removerItem(int posicao) {
-         Item i = getItens()[posicao]; // SALVA NA VARIAVEL PARA DEPOIS DEIXAR NULL E RETORNAR
-         getItens()[posicao] = null;
-         return i; //para retornar o valor no caso o nome e mostrar ele, senão ele se perderia
-        }
+        return this.itens.remove(posicao);
+    }
 
     // GETTERS & SETTERS
 
@@ -69,11 +48,11 @@ public class Estante {
         this.capMaxima = capMaxima;
     }
 
-    public static Item[] getItens() {
+    public ArrayList<Item> getItens() {
         return itens;
     }
 
-    public void setItens(Item[] itens) {
+    public void setItens(ArrayList<Item> itens) {
         this.itens = itens;
     }
 }
