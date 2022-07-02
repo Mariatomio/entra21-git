@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Baralho/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Baralho/src/playesOption/PlayesOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Baralho/src/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/Naipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Naipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../voo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../voo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/baralho/Baralho.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/baralho/Baralho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baralho/src/jogo/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/jogo/Jogo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,6 +49,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/a git em casa curso/entra21-git/Livraria&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="classes" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />

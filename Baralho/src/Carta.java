@@ -6,8 +6,9 @@ import java.util.ArrayList;
 public class Carta {
     private Naipe naipe;
     private ValorCarta valor;
+
     private int valorReal;
-private Baralho baralho;
+
     public int getValorReal() {
         return valorReal;
     }

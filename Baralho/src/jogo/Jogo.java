@@ -3,13 +3,14 @@ package jogo;
 import baralho.Baralho;
 import playesOption.PlayesOption;
 
+import java.util.ArrayList;
+
 public class Jogo {
-    private Carta handPlayer;
 
-private Carta handCPU;
-private Baralho deck;
-private int palyerWins;
+    private ArrayList<Carta> handPlayer = new ArrayList<>();
+    private ArrayList<Carta> handCPU = new ArrayList<>();
 
+    private Baralho deck = new Baralho();
 
     private class Carta {
     }
@@ -39,21 +40,7 @@ private int palyerWins;
 
     //gETTERS AND sETTERS
 
-    public Carta getHandPlayer() {
-        return handPlayer;
-    }
 
-    public void setHandPlayer(Carta handPlayer) {
-        this.handPlayer = handPlayer;
-    }
-
-    public Carta getHandCPU() {
-        return handCPU;
-    }
-
-    public void setHandCPU(Carta handCPU) {
-        this.handCPU = handCPU;
-    }
 
     public Baralho getDeck() {
         return deck;
@@ -63,14 +50,14 @@ private int palyerWins;
         this.deck = deck;
     }
 
-    public int getPalyerWins() {
-        return palyerWins;
+
+    public void setHandPlayer(ArrayList<Carta> handPlayer) {
+        this.handPlayer = handPlayer;
     }
 
-    public void setPalyerWins(int palyerWins) {
-        this.palyerWins = palyerWins;
+    public void setHandCPU(ArrayList<Carta> handCPU) {
+        this.handCPU = handCPU;
     }
-
     //Getters and Setters dos métodos
 
 }

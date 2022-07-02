@@ -1,42 +1,53 @@
 package baralho;
 
+import jogo.Jogo;
+
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Baralho {
 
-    private ArrayList<Carta> cartas = new ArrayList<>();
+    private ArrayList<> cartas = new ArrayList<>();
 
-    Baralho(){
-        for (Naipe n : Naipe.values()){
-            Carta c = new Carta();
+    public Baralho() {
+        for (Naipe n : Naipe.values()) {
+            int valorCarta = 1;
+            for (ValorCarta vc : ValorCarta.values()) {
+                Jogo.Carta c = new Jogo.Carta();
+                c.setValor(vc);
+                c.setNaipe(n);
+                c.setValorReal(valorCarta);
+                cartas.add(c);
+                valorCarta++;
+            }
         }
         shuffle();
     }
- public void shuffle(){
-     Collection.shuffle(this.cartas); //embaralha
- }
- public Carta getFromTop(){
-     return this.cartas.remove(0);
 
- }
- public Carta getFromBottom(){
-     return this.cartas.remove(this.cartas.size()-1);
- }
- public Carta searchCard(Naipe naipe, ValorCarta valor){
-return this.cartas.stream().filter(carta -> naipe.equals(carta.getNaipe()) &&
-        valor.equals(carta.getValor())).findFirst().orElse(null);
- }
- public Carta searchCard(Naipe naipe, int valorReal){
-     return this.cartas.stream().filter(carta -> naipe.equals(carta.getNaipe()) &&
-             carta.getValorReal() == valorReal).findFirst().orElse(null);
- }
+    public void shuffle() {
+        Collections.shuffle(this.cartas);
+    }
 
+    public Carta getFromTop() {
+        return this.cartas.remove(0);
+    }
 
+    public Carta getFromBottom() {
+        return this.cartas.remove(this.cartas.size()-1);
+    }
 
+    public Carta searchCard(Naipe naipe, ValorCarta valor) {
+        return this.cartas.stream().filter(
+                carta -> naipe.equals(carta.getNaipe()) &&
+                        valor.equals(carta.getValor())
+        ).findFirst().orElse(null);
+    }
 
-    //----------------------GETTERS AND SETTERS
-
+    public Carta searchCard(Naipe naipe, int valorReal) {
+        return this.cartas.stream().filter(
+                carta -> naipe.equals(carta.getNaipe()) &&
+                        carta.getValorReal() == valorReal
+        ).findFirst().orElse(null);
+    }
 
     public ArrayList<Carta> getCartas() {
         return cartas;
@@ -44,15 +55,6 @@ return this.cartas.stream().filter(carta -> naipe.equals(carta.getNaipe()) &&
 
     public void setCartas(ArrayList<Carta> cartas) {
         this.cartas = cartas;
-    }
-
-    private class Carta {
-    }
-
-    private static class Naipe {
-    }
-
-    private class ValorCarta {
     }
 }
 
