@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/baralho/Baralho.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/baralho/Baralho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/jogo/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/jogo/Jogo.java" afterDir="false" />
-    </list>
+    <list default="true" id="6746b308-9b36-4651-95a7-26fb08470cd3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,14 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/a git em casa curso/entra21-git/Livraria&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/User/Documents/a git em casa curso/entra21-git/Livraria",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="classes" />

@@ -5,14 +5,15 @@ import classes.guardados.Estante;
 import java.util.HashMap;
 
 public class Loja {
-    private HashMap<String, Estante> listaEstante = new HashMap<>();
 
-    public HashMap<String, Estante> getListaEstante() {
-        return listaEstante;
+    private HashMap<String, Estante> estantes = new HashMap<>();
+
+    public HashMap<String, Estante> getEstantes() {
+        return estantes;
     }
 
-    public void setListaEstante(HashMap<String, Estante> listaEstante) {
-        this.listaEstante = listaEstante;
+    public void setEstantes(HashMap<String, Estante> estantes) {
+        this.estantes = estantes;
     }
 }
 //Main add estante, menu principal, add item/ nn da estante (pedir qual vai ser a estante) pedir a capacidade max e o

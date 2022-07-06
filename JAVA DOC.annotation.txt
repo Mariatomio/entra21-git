@@ -1,0 +1,22 @@
+/**
+*@param(parametros) escolha = Inteiro referente ao valor da opção do menu
+* @returnA opção de ,enu escolhida ou null
+* comenta java doc
+*
+*
+*/
+escolha = EMenu.getByValorOpcao(in.nextLine());
+pq? ((EMenu) escolha).getValorOpcao();
+
+ANNOTATION
+@Override
+@NotNull nn pd ser null
+@Nullable avisa O DESENVOLVEDOR = a slah precisa ser null
+annotation avisa o desenvolvedor quando tem algo suspeito
+
+Java doc(ta ali so por estar, tem que colocar escrito)
+bom para resumo
+@Deprecated avisa NN é p ser usado, usa outro é para isso q é usado
+@Contract
+
+

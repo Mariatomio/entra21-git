@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class Estante {
     private int capMaxima;
-    /*private static Item[] itens;*/
     private ArrayList<Item> itens = new ArrayList<>();
 
     public Estante(int capMaxima) {
@@ -23,15 +22,16 @@ public class Estante {
     }
 
     public Item buscarItem(String titulo) {
-              return this.itens.stream().filter(i -> i.getTitulo().equalsIgnoreCase(titulo)).findFirst().orElse(null);
+        return this.itens.stream().filter(i -> i.getTitulo().equalsIgnoreCase(titulo))
+                .findFirst().orElse(null);
     }
 
 
     public boolean adicionarItem(Item item) {
-       if (!estanteCheia()){
-           return this.itens.add(item);
-       }
-       return false;
+        if (!estanteCheia()) {
+            return this.itens.add(item);
+        }
+        return false;
     }
 
     public Item removerItem(int posicao) {
@@ -56,3 +56,4 @@ public class Estante {
         this.itens = itens;
     }
 }
+

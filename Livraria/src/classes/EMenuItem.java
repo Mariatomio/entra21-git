@@ -8,7 +8,6 @@ public enum EMenuItem implements IMenu{
 
     private int valorOpcao;
     private String descricao;
-
     EMenuItem(int valor, String descricao) {
         valorOpcao = valor;
         this.descricao = descricao;
@@ -22,7 +21,6 @@ public enum EMenuItem implements IMenu{
         }
         return null;
     }
-
     public int getValorOpcao() {
         return this.valorOpcao;
     }
