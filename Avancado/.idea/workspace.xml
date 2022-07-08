@@ -5,18 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcbe3718-d178-411f-8e9d-fa748b31b021" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Baralho/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Baralho/src/playesOption/PlayesOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../POO/src/ELanche.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/Naipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/Naipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baralho/src/ValorCarta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/Assento/AssentoVoo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Avancado/Assento/AssentoVoo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/Assento/Aviao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Avancado/Assento/Aviao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/Assento/Mainassento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Avancado/Assento/Mainassento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Avancado/maindesnecessaria/Mainoutra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Avancado/maindesnecessaria/Mainoutra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assento/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maindesnecessaria/Mainoutra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maindesnecessaria/Mainoutra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/Livraria.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Livraria/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/EMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/EMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/EMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/EMenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/avaliacao/Avaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/avaliacao/Avaliacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/itens/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/itens/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../voo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../voo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/out/production/POO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../POO/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +67,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MainAssento">
+  <component name="RunManager" selected="Application.maindesnecessaria.Mainoutra">
     <configuration name="MainAssento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assento.MainAssento" />
       <module name="Avancado" />
@@ -111,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.maindesnecessaria.Mainoutra" />
         <item itemvalue="Application.MainAssento" />
         <item itemvalue="Application.exerciciotreinarALcarro.Main" />
         <item itemvalue="Application.exerciciotreinarALcarro.MainCarro" />
         <item itemvalue="Application.maindesnecessaria.Main2" />
-        <item itemvalue="Application.maindesnecessaria.Mainoutra" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +141,15 @@
       <updated>1655242761124</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

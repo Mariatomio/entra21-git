@@ -1,8 +1,6 @@
 package classes.guardados;
 
 import classes.itens.Item;
-
-import java.awt.font.FontRenderContext;
 import java.util.ArrayList;
 
 public class Estante {

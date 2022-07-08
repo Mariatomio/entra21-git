@@ -60,8 +60,8 @@ listvoo.add(a);
             for (int j = 0; j < linhasCadeirasEconomicas; j++) {
                 AssentoVoo a = new AssentoVoo();
                 a.setCodigo(String.valueOf(codigoAssentos.charAt(i))+j);
-                a.setClasse(ClasseAssentoVoo.ECONOMICA);
-                assentos.add(a);
+                a.setClasse(ClassesAssentoVoo.ECONOMICA);
+                listvoo.add(a);
             }
         }
 
@@ -207,6 +207,12 @@ listvoo.add(a);
     }
         return null;
     }
+
+    @Override
+    public Assento getAssento(String assento, String classe) {
+        return null;
+    }
+
     public Assento getAssento(String assento, ClassesAssentoVoo classe) {
         for (AssentoVoo voo: listvoo){
             if (voo.getCodigo().equalsIgnoreCase(assento) && voo.getClasse().equals(classe)){

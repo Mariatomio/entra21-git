@@ -7,6 +7,7 @@ import classes.itens.DVD;
 import classes.itens.Item;
 import classes.itens.Livro;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {
@@ -52,8 +53,8 @@ public class Main {
                     while (escolha == null) {
                         if (item != null) {
                             while (escolha == null) {
-                                System.out.println(item.getTitulo()+ " encontrado! Ações disponíveis: ");
-                                for(EMenuItem i : EMenuItem.values()) {
+                                System.out.println(item.getTitulo() + " encontrado! Ações disponíveis: ");
+                                for (EMenuItem i : EMenuItem.values()) {
                                     System.out.printf("(%d) %s\n", i.getValorOpcao(), i.getDescricao());
                                 }
                                 escolha = EMenuItem.getByValorOpcao(in.nextInt());
@@ -68,9 +69,11 @@ public class Main {
                             }
                             escolha = EMenu.getByValorOpcao(in.nextInt());
                         }
-                        in.nextLine();
-                        if (escolha == null) {
+                    }
+                    catch (RuntimeException e){
                             System.err.println("Selecione uma opção válida!");
+                        } finally {
+                            in.nextLine();
                         }
                     }
                     return escolha;
@@ -168,6 +171,7 @@ public class Main {
                         System.out.println("avaliação: "+a.getRating());
                         System.out.println("Comentário: ");
                         System.out.println(a.getFeedback());
+                        System.out.println(a.getAvaliacao().format(DateTimeFormatter.ofPattern("\"Data avaliação:\" DD/MM/yyyy HH:mm:ss")) + "Horário");
                         System.out.println("--------------------");
                     });
                     System.out.println("Classificação final: "+i.getTotalRating());

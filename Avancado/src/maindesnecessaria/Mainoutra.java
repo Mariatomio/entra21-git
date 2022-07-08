@@ -1,13 +1,17 @@
 package maindesnecessaria;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Mainoutra {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Exe04();
+        exe05();
     }
 
     public static void exe01() {
@@ -92,9 +96,35 @@ public class Mainoutra {
         }
 
         public static void Exe04() {
-
+/*LocalDateTime datetime = LocalDateTime.now();
+            System.out.println(datetime.getYear());
+            System.out.println(datetime.getMonthValue());
+            System.out.println(datetime.getDayOfMonth());
+            System.out.println(datetime.getHour());
+            System.out.println(datetime.getMinute());
+            System.out.println(datetime.getSecond());
+            System.out.println(datetime.getNano());
+            System.out.println(datetime.getDayOfYear());
+            System.out.println(datetime.toLocalDate().isLeapYear());//ano bisexto
+            System.out.println(datetime);*/
+            //System.out.println(LocalDateTime.of);
+            //Não sabe vai no stck over flow)
+        //MonthValue é o numero dele
+           // System.out.println(LocalDateTime.now().format(DatE(dd/MM/yyyy hh:mm:ss)));
         }
 
+    public static void exe05() {
+        while(true){
+            try{
+                System.out.println("Informe um número: ");
+                System.out.println(in.nextInt());
+            } catch (InputMismatchException e) {
+                in.nextLine();
+                System.err.println("Não é um número!");
+
+            }
+        }
+    }
 
     }
 

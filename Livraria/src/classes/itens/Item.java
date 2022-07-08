@@ -1,11 +1,13 @@
 package classes.itens;
     import classes.avaliacao.Avaliacao;
 
+    import java.time.LocalDateTime;
     import java.util.ArrayList;
     import java.util.Locale;
     import java.util.Scanner;
 
 public abstract class Item {
+    //ITEM.AVALIAR MENU MOSTRARAVALIAÇÕES, METODO AVALIAR INSTANCIAR
     private String titulo;
     private String genero;
     private double valor;
@@ -21,6 +23,8 @@ public abstract class Item {
         in.nextLine();
         System.out.print("Informe algum feedback (opcional): ");
         a.setFeedback(in.nextLine());
+        //get data avaliacao
+        a.getAvaliacao();
         this.avaliacoes.add(a);
     }
 

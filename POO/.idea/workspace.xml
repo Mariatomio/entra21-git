@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7189a449-46cf-47dd-8a51-c9a31ce4a982" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/exerciciotreinarALcarro/Carroexercicio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/exerciciotreinarALcarro/MainCarro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Mainoutra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Carroexercicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Avancado/src/exerciciotreinarALcarro/MainCarro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/AssentoVoo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/AssentoVoo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Aviao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Mainassento.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/Assento/Mainassento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/out/production/Avancado/maindesnecessaria/Mainoutra.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/out/production/Avancado/maindesnecessaria/Mainoutra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/Assento/Aviao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Avancado/src/maindesnecessaria/Mainoutra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancado/src/maindesnecessaria/Mainoutra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/out/production/Livraria/Livraria.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/EMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/EMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/EMenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/EMenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/avaliacao/Avaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/avaliacao/Avaliacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/guardados/Estante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Livraria/src/classes/itens/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Livraria/src/classes/itens/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

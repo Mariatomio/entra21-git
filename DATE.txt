@@ -1,0 +1,24 @@
+Instant
+
+Date
+
+TimesStamp
+
+LocalDate = null;
+
+LocalTime = null;
+
+LocalDateTime = null;
+
+Duration bet = Duration.between(inicio, fim).minusHours(1).minus
+
+DURATION trabalha com hora
+
+PERIOD trabalha com data
+
+----------------------------------------------------------------------
+Exception:
+NullPOINTEReXCEPTION
+OUTROS
+RunTimeException
+hasNext ??
